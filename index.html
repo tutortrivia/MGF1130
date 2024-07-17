@@ -22,16 +22,12 @@
             <button id="start-button" class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded">Start Game</button>
         </div>
         <div id="game-content" class="hidden">
+            <div id="timer" class="text-2xl font-bold text-center mb-4"></div>
             <div id="question-container" class="mb-6">
                 <p id="question" class="text-xl font-semibold mb-4"></p>
                 <div id="answers" class="grid grid-cols-1 gap-4"></div>
             </div>
             <div id="result" class="text-center mb-4 font-bold"></div>
-            <div id="progress" class="mb-4">
-                <div class="bg-gray-200 rounded-full h-2.5">
-                    <div id="progress-bar" class="bg-blue-600 h-2.5 rounded-full" style="width: 0%"></div>
-                </div>
-            </div>
             <p id="score" class="text-center font-semibold"></p>
         </div>
     </div>
@@ -46,11 +42,31 @@
         <source src="incorrect.mp3" type="audio/mpeg">
     </audio>
 
-    <script src="questions.js"></script>
     <script>
-        let questions = [];
+        const allQuestions = [
+            {
+                question: "In which year did Christopher Columbus first reach the Americas?",
+                answers: ["1492", "1776", "1066", "1215"],
+                correct: 0
+            },
+            {
+                question: "Who was the first Emperor of Rome?",
+                answers: ["Julius Caesar", "Augustus", "Nero", "Constantine"],
+                correct: 1
+            },
+            // ... (include all 50 questions here)
+            {
+                question: "When was the Magna Carta signed?",
+                answers: ["1015", "1115", "1215", "1315"],
+                correct: 2
+            }
+        ];
+
         let currentQuestion = 0;
-        let score = 0;
+        let correctAnswers = 0;
+        let incorrectAnswers = 0;
+        let timeLeft = 90;
+        let timerInterval;
 
         const startMenu = document.getElementById('start-menu');
         const gameContent = document.getElementById('game-content');
@@ -65,8 +81,9 @@
             startMenu.classList.add('hidden');
             gameContent.classList.remove('hidden');
             backgroundMusic.play();
-            selectRandomQuestions();
+            shuffleArray(allQuestions);
             loadQuestion();
+            startTimer();
         }
 
         function shuffleArray(array) {
@@ -76,13 +93,8 @@
             }
         }
 
-        function selectRandomQuestions() {
-            shuffleArray(allQuestions);
-            questions = allQuestions.slice(0, 5);
-        }
-
         function loadQuestion() {
-            const question = questions[currentQuestion];
+            const question = allQuestions[currentQuestion];
             document.getElementById('question').textContent = question.question;
             const answersContainer = document.getElementById('answers');
             answersContainer.innerHTML = '';
@@ -93,11 +105,10 @@
                 button.onclick = () => selectAnswer(index);
                 answersContainer.appendChild(button);
             });
-            updateProgress();
         }
 
         function selectAnswer(index) {
-            const question = questions[currentQuestion];
+            const question = allQuestions[currentQuestion];
             const resultElement = document.getElementById('result');
             const selectedButton = document.getElementById('answers').children[index];
             
@@ -107,46 +118,62 @@
                 selectedButton.classList.remove('bg-blue-500', 'hover:bg-blue-600');
                 selectedButton.classList.add('bg-green-500', 'hover:bg-green-600');
                 correctSound.play();
-                score++;
+                correctAnswers++;
             } else {
                 resultElement.textContent = "Incorrect. The correct answer was: " + question.answers[question.correct];
                 resultElement.className = 'text-red-600 fade-in';
                 selectedButton.classList.remove('bg-blue-500', 'hover:bg-blue-600');
                 selectedButton.classList.add('bg-red-500', 'hover:bg-red-600');
                 incorrectSound.play();
+                incorrectAnswers++;
             }
             
-            document.getElementById('score').textContent = `Score: ${score}/${questions.length}`;
+            document.getElementById('score').textContent = `Correct: ${correctAnswers} | Incorrect: ${incorrectAnswers}`;
             currentQuestion++;
             
-            if (currentQuestion < questions.length) {
-                setTimeout(() => {
-                    selectedButton.classList.remove('bg-green-500', 'bg-red-500', 'hover:bg-green-600', 'hover:bg-red-600');
-                    selectedButton.classList.add('bg-blue-500', 'hover:bg-blue-600');
+            setTimeout(() => {
+                if (timeLeft > 0) {
                     loadQuestion();
-                }, 2000);
-            } else {
-                setTimeout(endGame, 2000);
-            }
+                }
+            }, 1000);
         }
 
-        function updateProgress() {
-            const progress = (currentQuestion / questions.length) * 100;
-            document.getElementById('progress-bar').style.width = `${progress}%`;
+        function startTimer() {
+            updateTimerDisplay();
+            timerInterval = setInterval(() => {
+                timeLeft--;
+                updateTimerDisplay();
+                if (timeLeft <= 0) {
+                    clearInterval(timerInterval);
+                    endGame();
+                }
+            }, 1000);
+        }
+
+        function updateTimerDisplay() {
+            document.getElementById('timer').textContent = `Time left: ${timeLeft} seconds`;
         }
 
         function endGame() {
+            clearInterval(timerInterval);
+            backgroundMusic.pause();
+            backgroundMusic.currentTime = 0;
             const container = document.getElementById('game-container');
             container.innerHTML = `
                 <h1 class="text-3xl font-bold text-center mb-6 text-blue-600">Quiz Completed!</h1>
-                <p class="text-xl text-center mb-4">Your final score: ${score}/${questions.length}</p>
+                <p class="text-xl text-center mb-2">Time's up!</p>
+                <p class="text-lg text-center mb-4">Your final score:</p>
+                <p class="text-center mb-2">Correct answers: ${correctAnswers}</p>
+                <p class="text-center mb-4">Incorrect answers: ${incorrectAnswers}</p>
                 <button onclick="restartGame()" class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded block mx-auto">Play Again</button>
             `;
         }
 
         function restartGame() {
             currentQuestion = 0;
-            score = 0;
+            correctAnswers = 0;
+            incorrectAnswers = 0;
+            timeLeft = 90;
             const container = document.getElementById('game-container');
             container.innerHTML = `
                 <h1 class="text-3xl font-bold text-center mb-6 text-blue-600">Who Wants To Be A History Buff?</h1>
@@ -154,21 +181,16 @@
                     <button id="start-button" class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded">Start Game</button>
                 </div>
                 <div id="game-content" class="hidden">
+                    <div id="timer" class="text-2xl font-bold text-center mb-4"></div>
                     <div id="question-container" class="mb-6">
                         <p id="question" class="text-xl font-semibold mb-4"></p>
                         <div id="answers" class="grid grid-cols-1 gap-4"></div>
                     </div>
                     <div id="result" class="text-center mb-4 font-bold"></div>
-                    <div id="progress" class="mb-4">
-                        <div class="bg-gray-200 rounded-full h-2.5">
-                            <div id="progress-bar" class="bg-blue-600 h-2.5 rounded-full" style="width: 0%"></div>
-                        </div>
-                    </div>
                     <p id="score" class="text-center font-semibold"></p>
                 </div>
             `;
             document.getElementById('start-button').addEventListener('click', startGame);
-            backgroundMusic.currentTime = 0;
         }
     </script>
 </body>
