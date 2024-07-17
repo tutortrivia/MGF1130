@@ -1,3 +1,3 @@
 # historybuff
-By Jesse Rogers (jesse.rogersmath@gmail.com)
+By Jesse Rogers @MindCraftGames0 on Twitter
 Inspired by trivia game shows, test your skills at world history!
