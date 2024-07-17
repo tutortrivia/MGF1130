@@ -101,7 +101,7 @@ const allQuestions = [
             },
             {
                 question: "Which empire was defeated in World War I?",
-                answers: ["British Empire", "Russian Empire", "Ottoman Empire", "Austro-Hungarian Empire"],
+                answers: ["British Empire", "Russian Empire", "Ottoman Empire", "French Empire"],
                 correct: 2
             },
             {
