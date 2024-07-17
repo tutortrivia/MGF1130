@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>History Time Machine Quiz</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        .fade-in {
+            animation: fadeIn 0.5s ease-in-out;
+        }
+    </style>
+</head>
+<body class="bg-gray-100 min-h-screen flex items-center justify-center">
+    <div id="game-container" class="bg-white p-8 rounded-lg shadow-lg max-w-2xl w-full">
+        <h1 class="text-3xl font-bold text-center mb-6 text-blue-600">History Time Machine Quiz</h1>
+        <div id="question-container" class="mb-6">
+            <p id="question" class="text-xl font-semibold mb-4"></p>
+            <div id="answers" class="grid grid-cols-1 gap-4"></div>
+        </div>
+        <div id="result" class="text-center mb-4 font-bold"></div>
+        <div id="progress" class="mb-4">
+            <div class="bg-gray-200 rounded-full h-2.5">
+                <div id="progress-bar" class="bg-blue-600 h-2.5 rounded-full" style="width: 0%"></div>
+            </div>
+        </div>
+        <p id="score" class="text-center font-semibold"></p>
+    </div>
+
+    <script>
+        const questions = [
+            {
+                question: "In which year did Christopher Columbus first reach the Americas?",
+                answers: ["1492", "1776", "1066", "1215"],
+                correct: 0
+            },
+            {
+                question: "Who was the first Emperor of Rome?",
+                answers: ["Julius Caesar", "Augustus", "Nero", "Constantine"],
+                correct: 1
+            },
+            {
+                question: "Which ancient wonder was located in Alexandria, Egypt?",
+                answers: ["Hanging Gardens", "Colossus of Rhodes", "Lighthouse", "Temple of Artemis"],
+                correct: 2
+            },
+            {
+                question: "In which year did World War II end?",
+                answers: ["1943", "1944", "1945", "1946"],
+                correct: 2
+            },
+            {
+                question: "Who wrote the Declaration of Independence?",
+                answers: ["George Washington", "Benjamin Franklin", "Thomas Jefferson", "John Adams"],
+                correct: 2
+            }
+        ];
+
+        let currentQuestion = 0;
+        let score = 0;
+
+        function loadQuestion() {
+            const question = questions[currentQuestion];
+            document.getElementById('question').textContent = question.question;
+            const answersContainer = document.getElementById('answers');
+            answersContainer.innerHTML = '';
+            question.answers.forEach((answer, index) => {
+                const button = document.createElement('button');
+                button.textContent = answer;
+                button.className = 'bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded fade-in';
+                button.onclick = () => selectAnswer(index);
+                answersContainer.appendChild(button);
+            });
+            updateProgress();
+        }
+
+        function selectAnswer(index) {
+            const question = questions[currentQuestion];
+            const resultElement = document.getElementById('result');
+            if (index === question.correct) {
+                resultElement.textContent = "Correct!";
+                resultElement.className = 'text-green-600 fade-in';
+                score++;
+            } else {
+                resultElement.textContent = "Incorrect. The correct answer was: " + question.answers[question.correct];
+                resultElement.className = 'text-red-600 fade-in';
+            }
+            document.getElementById('score').textContent = `Score: ${score}/${questions.length}`;
+            currentQuestion++;
+            if (currentQuestion < questions.length) {
+                setTimeout(loadQuestion, 2000);
+            } else {
+                setTimeout(endGame, 2000);
+            }
+        }
+
+        function updateProgress() {
+            const progress = (currentQuestion / questions.length) * 100;
+            document.getElementById('progress-bar').style.width = `${progress}%`;
+        }
+
+        function endGame() {
+            const container = document.getElementById('game-container');
+            container.innerHTML = `
+                <h1 class="text-3xl font-bold text-center mb-6 text-blue-600">Quiz Completed!</h1>
+                <p class="text-xl text-center mb-4">Your final score: ${score}/${questions.length}</p>
+                <button onclick="restartGame()" class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded block mx-auto">Play Again</button>
+            `;
+        }
+
+        function restartGame() {
+            currentQuestion = 0;
+            score = 0;
+            loadQuestion();
+        }
+
+        loadQuestion();
+    </script>
+</body>
+</html>
