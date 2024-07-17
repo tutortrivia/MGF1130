@@ -193,6 +193,56 @@ const allQuestions = [
         question: "Which acid is commonly found in car batteries?",
         answers: ["Hydrochloric acid", "Sulfuric acid", "Nitric acid", "Phosphoric acid"],
         correct: 1
+    },
+     {
+        question: "What is the atomic number of oxygen?",
+        answers: ["6", "7", "8", "9"],
+        correct: 2
+    },
+    {
+        question: "Which of the following is not a state of matter?",
+        answers: ["Solid", "Liquid", "Gas", "Energy"],
+        correct: 3
+    },
+    {
+        question: "What is the chemical symbol for silver?",
+        answers: ["Si", "Ag", "Au", "Sr"],
+        correct: 1
+    },
+    {
+        question: "Which element is essential for life and is found in all organic compounds?",
+        answers: ["Hydrogen", "Oxygen", "Nitrogen", "Carbon"],
+        correct: 3
+    },
+    {
+        question: "What is the pH of a neutral solution?",
+        answers: ["0", "7", "14", "10"],
+        correct: 1
+    },
+    {
+        question: "Which of these is not a noble gas?",
+        answers: ["Neon", "Argon", "Krypton", "Nitrogen"],
+        correct: 3
+    },
+    {
+        question: "What is the chemical formula for glucose?",
+        answers: ["C6H12O6", "C12H22O11", "CH3COOH", "NaHCO3"],
+        correct: 0
+    },
+    {
+        question: "Which element has the chemical symbol 'Fe'?",
+        answers: ["Iron", "Fluorine", "Francium", "Iodine"],
+        correct: 0
+    },
+    {
+        question: "What is the most abundant element in the Earth's crust?",
+        answers: ["Silicon", "Aluminum", "Iron", "Oxygen"],
+        correct: 3
+    },
+    {
+        question: "Which of these is an alkali metal?",
+        answers: ["Magnesium", "Calcium", "Potassium", "Aluminum"],
+        correct: 2
     }
 ];
 
