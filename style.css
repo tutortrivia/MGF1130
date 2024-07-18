@@ -6,3 +6,29 @@
 .fade-in {
     animation: fadeIn 0.5s ease-in-out;
 }
+
+@keyframes timerPulse {
+    0% { transform: scale(1.5); }
+    100% { transform: scale(1); }
+}
+
+.timer-warning {
+    color: red;
+    animation: timerPulse 1s ease-in-out infinite;
+}
+
+#volume-control {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+#volume-toggle {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+#volume-toggle:focus {
+    outline: none;
+}
