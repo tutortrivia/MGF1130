@@ -53,15 +53,8 @@ function shuffleArray(array) {
 }
 
 function startGame() {
-    console.log("Starting game with library:", currentLibrary);
-    console.log("All questions:", allQuestions);
-    if (!allQuestions || !allQuestions[currentLibrary]) {
-        console.error("Error: Questions not found for the selected library.");
-        alert("Error: Questions not found for the selected library. Please try again.");
-        return;
-    }
+    currentLibrary = librarySelect.value;
     currentQuestions = [...allQuestions[currentLibrary]];
-    console.log("Current questions:", currentQuestions);
     shuffleArray(currentQuestions);
     currentQuestionIndex = 0;
     score = 0;
@@ -77,20 +70,12 @@ function startGame() {
 }
 
 function displayQuestion() {
-    console.log("Displaying question. Index:", currentQuestionIndex);
-    console.log("Current questions:", currentQuestions);
     if (currentQuestionIndex >= currentQuestions.length || timeLeft <= 0) {
         endGame();
         return;
     }
 
     const question = currentQuestions[currentQuestionIndex];
-    if (!question) {
-        console.error("Error: Question not found at index", currentQuestionIndex);
-        alert("Error: Question not found. Please try again.");
-        endGame();
-        return;
-    }
     questionElement.textContent = question.question;
     answersElement.innerHTML = '';
 
@@ -104,7 +89,7 @@ function displayQuestion() {
         button.classList.add('bg-blue-500', 'hover:bg-blue-600', 'text-white', 'font-bold', 'py-2', 'px-4', 'rounded', 'w-full');
         button.addEventListener('click', () => {
             if (!isTransitioning) {
-                checkAnswer(shuffledAnswers.indexOf(question.answers[question.correct]));
+                checkAnswer(answer, shuffledAnswers, question);
             }
         });
         answersElement.appendChild(button);
@@ -115,11 +100,12 @@ function displayQuestion() {
     resultElement.classList.add('text-blue-500');
 }
 
-function checkAnswer(selectedIndex) {
+function checkAnswer(selectedAnswer, shuffledAnswers, question) {
     isTransitioning = true;
-    const question = currentQuestions[currentQuestionIndex];
     const buttons = answersElement.getElementsByTagName('button');
-    const correctIndex = [...buttons].findIndex(button => button.textContent === question.answers[question.correct]);
+    const correctAnswer = question.answers[question.correct];
+    const selectedIndex = shuffledAnswers.indexOf(selectedAnswer);
+    const correctIndex = shuffledAnswers.indexOf(correctAnswer);
 
     for (let i = 0; i < buttons.length; i++) {
         buttons[i].disabled = true;
@@ -132,7 +118,7 @@ function checkAnswer(selectedIndex) {
         }
     }
 
-    if (selectedIndex === correctIndex) {
+    if (selectedAnswer === correctAnswer) {
         score++;
         resultElement.textContent = 'Correct!';
         resultElement.classList.remove('text-blue-500');
@@ -228,22 +214,16 @@ function endGame() {
     }
 
     resultsHTML += `
+        <select id="library-select" class="bg-white border border-gray-300 rounded-md py-2 px-4 mb-4 w-full md:w-1/2 mx-auto"></select>
+        <br>
         <button id="play-again" class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded mt-4">Play Again</button>
     `;
 
     startMenu.innerHTML = resultsHTML;
 
-    document.getElementById('play-again').addEventListener('click', () => {
-        startMenu.innerHTML = `
-            <select id="library-select" class="bg-white border border-gray-300 rounded-md py-2 px-4 mb-4 w-full md:w-1/2 mx-auto"></select>
-            <button id="get-tutoring-button" class="bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded mb-4 w-full md:w-1/2 mx-auto">Get Free Tutoring</button>
-            <br>
-            <button id="start-button" class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded w-full md:w-1/2 mx-auto">Start Game</button>
-        `;
-        populateLibrarySelect();
-        document.getElementById('start-button').addEventListener('click', startGame);
-        document.getElementById('get-tutoring-button').addEventListener('click', getTutoring);
-    });
+    populateLibrarySelect();
+    document.getElementById('library-select').value = currentLibrary;
+    document.getElementById('play-again').addEventListener('click', startGame);
 
     backgroundMusic.pause();
     backgroundMusic.currentTime = 0;
@@ -262,13 +242,11 @@ function getTutoring() {
     window.open('https://www.palmbeachstate.edu/slc/', '_blank');
 }
 
-startButton.addEventListener('click', startGame);
-volumeToggle.addEventListener('click', toggleVolume);
-document.getElementById('get-tutoring-button').addEventListener('click', getTutoring);
-
 // Initialize the game
 populateLibrarySelect();
 updateGameTitle();
 
-// Debug: Log allQuestions object
-console.log("All questions:", allQuestions);
+// Event listeners
+startButton.addEventListener('click', startGame);
+volumeToggle.addEventListener('click', toggleVolume);
+document.getElementById('get-tutoring-button').addEventListener('click', getTutoring);
