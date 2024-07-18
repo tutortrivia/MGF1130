@@ -53,9 +53,13 @@ function shuffleArray(array) {
     }
 }
 
-function startGame() {
+async function startGame() {
     currentLibrary = librarySelect.value;
-    currentQuestions = [...allQuestions[currentLibrary]];
+    currentQuestions = await loadQuestionLibrary(currentLibrary);
+    if (!currentQuestions) {
+        alert("Failed to load questions. Please try again.");
+        return;
+    }
     shuffleArray(currentQuestions);
     currentQuestionIndex = 0;
     score = 0;
@@ -254,6 +258,8 @@ function toggleVolume() {
 function getTutoring() {
     window.open('https://www.palmbeachstate.edu/slc/', '_blank');
 }
+
+
 
 // Initialize the game
 showStartMenu();
