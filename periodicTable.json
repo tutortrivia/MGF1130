@@ -104,8 +104,8 @@
     {
         "questionId": "PT0000018",
         "question": "Which element is used in making pencil 'lead'?",
-        "answers": ["Lead", "Carbon", "Graphite", "Silicon"],
-        "correct": "Graphite"
+        "answers": ["Lead", "Carbon", "Neon", "Silicon"],
+        "correct": "Carbon"
     },
     {
         "questionId": "PT0000019",
@@ -283,7 +283,7 @@
     },
     {
         "questionId": "PT0000048",
-        "question": "Which element is known as the 'King of Metals'?",
+        "question": "Which element is often referred to as the 'Noble Metal' due to its resistance to corrosion and oxidation?",
         "answers": ["Gold", "Silver", "Platinum", "Palladium"],
         "correct": "Gold"
     },
