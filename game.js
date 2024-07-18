@@ -16,7 +16,7 @@ let currentQuestionIndex = 0;
 let score = 0;
 let incorrectAnswers = 0;
 let timer;
-let timeLeft = 30;
+let timeLeft = 90;
 let isMuted = false;
 let isTransitioning = false;
 let sessionBest = {
@@ -38,6 +38,7 @@ function startGame() {
     currentQuestionIndex = 0;
     score = 0;
     incorrectAnswers = 0;
+    timeLeft = 90;
     startMenu.classList.add('hidden');
     gameContent.classList.remove('hidden');
     displayQuestion();
@@ -48,7 +49,7 @@ function startGame() {
 }
 
 function displayQuestion() {
-    if (currentQuestionIndex >= allQuestions.length) {
+    if (currentQuestionIndex >= allQuestions.length || timeLeft <= 0) {
         endGame();
         return;
     }
@@ -68,8 +69,6 @@ function displayQuestion() {
         });
         answersElement.appendChild(button);
     });
-
-    resetTimer();
 }
 
 function checkAnswer(selectedIndex) {
@@ -116,29 +115,25 @@ function updateScore() {
 }
 
 function startTimer() {
-    timeLeft = 30;
     updateTimerDisplay();
     timer = setInterval(() => {
         timeLeft--;
         updateTimerDisplay();
         if (timeLeft <= 0) {
             clearInterval(timer);
-            checkAnswer(-1);
+            endGame();
         }
     }, 1000);
 }
 
-function resetTimer() {
-    clearInterval(timer);
-    startTimer();
-}
-
 function updateTimerDisplay() {
     timerElement.textContent = `Time left: ${timeLeft}s`;
-    if (timeLeft <= 5) {
+    if (timeLeft <= 17) {
         timerElement.classList.add('timer-warning');
+        timerElement.style.animation = 'timerPulse 1s ease-in-out infinite';
     } else {
         timerElement.classList.remove('timer-warning');
+        timerElement.style.animation = 'none';
     }
 }
 
