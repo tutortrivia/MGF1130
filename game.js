@@ -53,7 +53,15 @@ function shuffleArray(array) {
 }
 
 function startGame() {
+    console.log("Starting game with library:", currentLibrary);
+    console.log("All questions:", allQuestions);
+    if (!allQuestions || !allQuestions[currentLibrary]) {
+        console.error("Error: Questions not found for the selected library.");
+        alert("Error: Questions not found for the selected library. Please try again.");
+        return;
+    }
     currentQuestions = [...allQuestions[currentLibrary]];
+    console.log("Current questions:", currentQuestions);
     shuffleArray(currentQuestions);
     currentQuestionIndex = 0;
     score = 0;
@@ -69,12 +77,20 @@ function startGame() {
 }
 
 function displayQuestion() {
+    console.log("Displaying question. Index:", currentQuestionIndex);
+    console.log("Current questions:", currentQuestions);
     if (currentQuestionIndex >= currentQuestions.length || timeLeft <= 0) {
         endGame();
         return;
     }
 
     const question = currentQuestions[currentQuestionIndex];
+    if (!question) {
+        console.error("Error: Question not found at index", currentQuestionIndex);
+        alert("Error: Question not found. Please try again.");
+        endGame();
+        return;
+    }
     questionElement.textContent = question.question;
     answersElement.innerHTML = '';
 
@@ -253,3 +269,6 @@ document.getElementById('get-tutoring-button').addEventListener('click', getTuto
 // Initialize the game
 populateLibrarySelect();
 updateGameTitle();
+
+// Debug: Log allQuestions object
+console.log("All questions:", allQuestions);
