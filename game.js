@@ -11,6 +11,8 @@ const backgroundMusic = document.getElementById('backgroundMusic');
 const correctSound = document.getElementById('correctSound');
 const incorrectSound = document.getElementById('incorrectSound');
 const personalBestSound = new Audio('personalBest.mp3');
+const librarySelect = document.getElementById('library-select');
+const gameTitle = document.getElementById('game-title');
 
 let currentQuestionIndex = 0;
 let score = 0;
@@ -25,6 +27,23 @@ let sessionBest = {
     incorrect: 0,
     percentage: 0
 };
+let currentLibrary = 'chemistry';
+
+function getAvailableLibraries() {
+    // In a real-world scenario, this would be implemented server-side
+    return ['chemistry', 'grammar', 'history', 'mathematics'];
+}
+
+function populateLibrarySelect() {
+    const libraries = getAvailableLibraries();
+    librarySelect.innerHTML = libraries.map(lib => `<option value="${lib}">${lib.charAt(0).toUpperCase() + lib.slice(1)}</option>`).join('');
+    librarySelect.addEventListener('change', updateGameTitle);
+}
+
+function updateGameTitle() {
+    currentLibrary = librarySelect.value;
+    gameTitle.textContent = `Who Wants To Be A ${currentLibrary.charAt(0).toUpperCase() + currentLibrary.slice(1)} Buff?`;
+}
 
 function shuffleArray(array) {
     for (let i = array.length - 1; i > 0; i--) {
@@ -58,27 +77,36 @@ function displayQuestion() {
     questionElement.textContent = question.question;
     answersElement.innerHTML = '';
 
-    question.answers.forEach((answer, index) => {
+    // Shuffle the answers
+    const shuffledAnswers = [...question.answers];
+    shuffleArray(shuffledAnswers);
+
+    shuffledAnswers.forEach((answer, index) => {
         const button = document.createElement('button');
         button.textContent = answer;
         button.classList.add('bg-blue-500', 'hover:bg-blue-600', 'text-white', 'font-bold', 'py-2', 'px-4', 'rounded', 'w-full');
         button.addEventListener('click', () => {
             if (!isTransitioning) {
-                checkAnswer(index);
+                checkAnswer(shuffledAnswers.indexOf(question.answers[question.correct]));
             }
         });
         answersElement.appendChild(button);
     });
+
+    // Set neutral placeholder text
+    resultElement.textContent = 'Good Luck!';
+    resultElement.classList.add('text-blue-500');
 }
 
 function checkAnswer(selectedIndex) {
     isTransitioning = true;
     const question = allQuestions[currentQuestionIndex];
     const buttons = answersElement.getElementsByTagName('button');
+    const correctIndex = [...buttons].findIndex(button => button.textContent === question.answers[question.correct]);
 
     for (let i = 0; i < buttons.length; i++) {
         buttons[i].disabled = true;
-        if (i === question.correct) {
+        if (i === correctIndex) {
             buttons[i].classList.remove('bg-blue-500', 'hover:bg-blue-600');
             buttons[i].classList.add('bg-green-500');
         } else if (i === selectedIndex) {
@@ -87,14 +115,16 @@ function checkAnswer(selectedIndex) {
         }
     }
 
-    if (selectedIndex === question.correct) {
+    if (selectedIndex === correctIndex) {
         score++;
         resultElement.textContent = 'Correct!';
+        resultElement.classList.remove('text-blue-500');
         resultElement.classList.add('text-green-500');
         if (!isMuted) correctSound.play();
     } else {
         incorrectAnswers++;
         resultElement.textContent = 'Incorrect!';
+        resultElement.classList.remove('text-blue-500');
         resultElement.classList.add('text-red-500');
         if (!isMuted) incorrectSound.play();
     }
@@ -102,8 +132,9 @@ function checkAnswer(selectedIndex) {
     updateScore();
 
     setTimeout(() => {
-        resultElement.textContent = '';
+        resultElement.textContent = 'Good Luck!';
         resultElement.classList.remove('text-green-500', 'text-red-500');
+        resultElement.classList.add('text-blue-500');
         currentQuestionIndex++;
         displayQuestion();
         isTransitioning = false;
@@ -147,7 +178,7 @@ function endGame() {
 
     let resultsHTML = `
         <h2 class="text-2xl font-bold mb-4">Quiz Completed!</h2>
-        <p>Topics Covered: Chemistry Trivia</p>
+        <p>Topics Covered: ${currentLibrary.charAt(0).toUpperCase() + currentLibrary.slice(1)} Trivia</p>
         <p>Questions Attempted: ${attempted}</p>
         <p>Correct Answers: ${score}</p>
         <p>Incorrect Answers: ${incorrectAnswers}</p>
@@ -187,10 +218,12 @@ function endGame() {
 
     document.getElementById('play-again').addEventListener('click', () => {
         startMenu.innerHTML = `
+            <select id="library-select" class="bg-white border border-gray-300 rounded-md py-2 px-4 mb-4 w-full md:w-1/2 mx-auto"></select>
             <button id="get-tutoring-button" class="bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded mb-4 w-full md:w-1/2 mx-auto">Get Free Tutoring</button>
             <br>
             <button id="start-button" class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded w-full md:w-1/2 mx-auto">Start Game</button>
         `;
+        populateLibrarySelect();
         document.getElementById('start-button').addEventListener('click', startGame);
         document.getElementById('get-tutoring-button').addEventListener('click', getTutoring);
     });
@@ -215,3 +248,7 @@ function getTutoring() {
 startButton.addEventListener('click', startGame);
 volumeToggle.addEventListener('click', toggleVolume);
 document.getElementById('get-tutoring-button').addEventListener('click', getTutoring);
+
+// Initialize the game
+populateLibrarySelect();
+updateGameTitle();
