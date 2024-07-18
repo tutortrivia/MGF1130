@@ -68,7 +68,7 @@
     {
         "questionId": "NS0000012",
         "question": "Which set does the number 0 belong to?",
-        "answers": ["Natural Numbers", "Whole Numbers", "Integers", "All of the above"],
+        "answers": ["Natural Numbers", "Whole Numbers", "Integers", "All of these"],
         "correct": "Integers"
     },
     {
@@ -116,8 +116,8 @@
     {
         "questionId": "NS0000020",
         "question": "Which number is in the set of Rational Numbers?",
-        "answers": ["1", "-2", "0.5", "All of the above"],
-        "correct": "All of the above"
+        "answers": ["1", "-2", "0.5", "All of these"],
+        "correct": "All of these"
     },
     {
         "questionId": "NS0000021",
@@ -152,8 +152,8 @@
     {
         "questionId": "NS0000026",
         "question": "Which number is in the set of Rational Numbers?",
-        "answers": ["1/2", "0.75", "-3", "All of the above"],
-        "correct": "All of the above"
+        "answers": ["1/2", "0.75", "-3", "All of these"],
+        "correct": "All of these"
     },
     {
         "questionId": "NS0000027",
@@ -272,8 +272,8 @@
     {
         "questionId": "NS0000046",
         "question": "Which number is in the set of Rational Numbers?",
-        "answers": ["1/3", "0.25", "-7", "All of the above"],
-        "correct": "All of the above"
+        "answers": ["1/3", "0.25", "-7", "All of these"],
+        "correct": "All of these"
     },
     {
         "questionId": "NS0000047",
