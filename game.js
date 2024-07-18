@@ -37,6 +37,7 @@ function getAvailableLibraries() {
 function populateLibrarySelect() {
     const libraries = getAvailableLibraries();
     librarySelect.innerHTML = libraries.map(lib => `<option value="${lib}">${lib.charAt(0).toUpperCase() + lib.slice(1)}</option>`).join('');
+    librarySelect.value = currentLibrary;
     librarySelect.addEventListener('change', updateGameTitle);
 }
 
@@ -216,21 +217,29 @@ function endGame() {
 
     startMenu.innerHTML = resultsHTML;
 
-    document.getElementById('play-again').addEventListener('click', () => {
-        startMenu.innerHTML = `
-            <select id="library-select" class="bg-white border border-gray-300 rounded-md py-2 px-4 mb-4 w-full md:w-1/2 mx-auto"></select>
-            <button id="get-tutoring-button" class="bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded mb-4 w-full md:w-1/2 mx-auto">Get Free Tutoring</button>
-            <br>
-            <button id="start-button" class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded w-full md:w-1/2 mx-auto">Start Game</button>
-        `;
-        populateLibrarySelect();
-        librarySelect.value = currentLibrary;
-        document.getElementById('start-button').addEventListener('click', startGame);
-        document.getElementById('get-tutoring-button').addEventListener('click', getTutoring);
-    });
+    document.getElementById('play-again').addEventListener('click', showStartMenu);
 
     backgroundMusic.pause();
     backgroundMusic.currentTime = 0;
+}
+
+function showStartMenu() {
+    startMenu.innerHTML = `
+        <h1 id="game-title" class="text-3xl font-bold text-center mb-6 text-blue-600">Who Wants To Be A Buff?</h1>
+        <select id="library-select" class="bg-white border border-gray-300 rounded-md py-2 px-4 mb-4 w-full md:w-1/2 mx-auto"></select>
+        <button id="get-tutoring-button" class="bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded mb-4 w-full md:w-1/2 mx-auto">Get Free Tutoring</button>
+        <br>
+        <button id="start-button" class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded w-full md:w-1/2 mx-auto">Start Game</button>
+    `;
+    
+    librarySelect = document.getElementById('library-select');
+    gameTitle = document.getElementById('game-title');
+    
+    populateLibrarySelect();
+    updateGameTitle();
+    
+    document.getElementById('start-button').addEventListener('click', startGame);
+    document.getElementById('get-tutoring-button').addEventListener('click', getTutoring);
 }
 
 function toggleVolume() {
@@ -247,10 +256,7 @@ function getTutoring() {
 }
 
 // Initialize the game
-populateLibrarySelect();
-updateGameTitle();
+showStartMenu();
 
 // Event listeners
-startButton.addEventListener('click', startGame);
 volumeToggle.addEventListener('click', toggleVolume);
-document.getElementById('get-tutoring-button').addEventListener('click', getTutoring);
