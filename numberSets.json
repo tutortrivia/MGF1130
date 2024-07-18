@@ -69,7 +69,7 @@
         "questionId": "NS0000012",
         "question": "Which set does the number 0 belong to?",
         "answers": ["Natural Numbers", "Whole Numbers", "Integers", "All of the above"],
-        "correct": "All of the above"
+        "correct": "Integers"
     },
     {
         "questionId": "NS0000013",
@@ -97,7 +97,7 @@
     },
     {
         "questionId": "NS0000017",
-        "question": "3.14 ____ 22/7",
+        "question": "3 ____ 22/7",
         "answers": ["<", ">", "=", "Cannot Be Determined"],
         "correct": "<"
     },
@@ -176,7 +176,7 @@
     {
         "questionId": "NS0000030",
         "question": "Which number is in the set of Whole Numbers but not in the set of Natural Numbers?",
-        "answers": ["-1", "0", "1", "2"],
+        "answers": ["-15", "0", "1", "21"],
         "correct": "0"
     },
     {
