@@ -1,48 +1,30 @@
-let currentQuestion = 0;
-let correctAnswers = 0;
+const startButton = document.getElementById('start-button');
+const gameContent = document.getElementById('game-content');
+const questionElement = document.getElementById('question');
+const answersElement = document.getElementById('answers');
+const resultElement = document.getElementById('result');
+const scoreElement = document.getElementById('score');
+const timerElement = document.getElementById('timer');
+const startMenu = document.getElementById('start-menu');
+const volumeToggle = document.getElementById('volume-toggle');
+const backgroundMusic = document.getElementById('backgroundMusic');
+const correctSound = document.getElementById('correctSound');
+const incorrectSound = document.getElementById('incorrectSound');
+const personalBestSound = new Audio('personalBest.mp3');
+
+let currentQuestionIndex = 0;
+let score = 0;
 let incorrectAnswers = 0;
-let timeLeft = 90;
-let timerInterval;
-let isSoundOn = true;
-
-let startMenu;
-let gameContent;
-let startButton;
-let getTutoringButton;
-let backgroundMusic;
-let correctSound;
-let incorrectSound;
-let volumeToggle;
-
-function initializeGame() {
-    startMenu = document.getElementById('start-menu');
-    gameContent = document.getElementById('game-content');
-    startButton = document.getElementById('start-button');
-    getTutoringButton = document.getElementById('get-tutoring-button');
-    backgroundMusic = document.getElementById('backgroundMusic');
-    correctSound = document.getElementById('correctSound');
-    incorrectSound = document.getElementById('incorrectSound');
-    volumeToggle = document.getElementById('volume-toggle');
-
-    startButton.addEventListener('click', startGame);
-    getTutoringButton.addEventListener('click', openTutoringPage);
-    volumeToggle.addEventListener('click', toggleSound);
-}
-
-function openTutoringPage() {
-    window.open('https://www.palmbeachstate.edu/slc/', '_blank');
-}
-
-function startGame() {
-    startMenu.classList.add('hidden');
-    gameContent.classList.remove('hidden');
-    if (isSoundOn) {
-        backgroundMusic.play();
-    }
-    shuffleArray(allQuestions);
-    loadQuestion();
-    startTimer();
-}
+let timer;
+let timeLeft = 30;
+let isMuted = false;
+let isTransitioning = false;
+let sessionBest = {
+    attempted: 0,
+    correct: 0,
+    incorrect: 0,
+    percentage: 0
+};
 
 function shuffleArray(array) {
     for (let i = array.length - 1; i > 0; i--) {
@@ -51,74 +33,109 @@ function shuffleArray(array) {
     }
 }
 
-function loadQuestion() {
-    const question = allQuestions[currentQuestion];
-    document.getElementById('question').textContent = question.question;
-    const answersContainer = document.getElementById('answers');
-    answersContainer.innerHTML = '';
+function startGame() {
+    shuffleArray(allQuestions);
+    currentQuestionIndex = 0;
+    score = 0;
+    incorrectAnswers = 0;
+    startMenu.classList.add('hidden');
+    gameContent.classList.remove('hidden');
+    displayQuestion();
+    startTimer();
+    if (!isMuted) {
+        backgroundMusic.play();
+    }
+}
+
+function displayQuestion() {
+    if (currentQuestionIndex >= allQuestions.length) {
+        endGame();
+        return;
+    }
+
+    const question = allQuestions[currentQuestionIndex];
+    questionElement.textContent = question.question;
+    answersElement.innerHTML = '';
+
     question.answers.forEach((answer, index) => {
         const button = document.createElement('button');
         button.textContent = answer;
-        button.className = 'bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded fade-in';
-        button.onclick = () => selectAnswer(index);
-        answersContainer.appendChild(button);
+        button.classList.add('bg-blue-500', 'hover:bg-blue-600', 'text-white', 'font-bold', 'py-2', 'px-4', 'rounded', 'w-full');
+        button.addEventListener('click', () => {
+            if (!isTransitioning) {
+                checkAnswer(index);
+            }
+        });
+        answersElement.appendChild(button);
     });
+
+    resetTimer();
 }
 
-function selectAnswer(index) {
-    const question = allQuestions[currentQuestion];
-    const resultElement = document.getElementById('result');
-    const selectedButton = document.getElementById('answers').children[index];
-    
-    if (index === question.correct) {
-        resultElement.textContent = "Correct!";
-        resultElement.className = 'text-green-600 fade-in';
-        selectedButton.classList.remove('bg-blue-500', 'hover:bg-blue-600');
-        selectedButton.classList.add('bg-green-500', 'hover:bg-green-600');
-        if (isSoundOn) {
-            correctSound.play();
+function checkAnswer(selectedIndex) {
+    isTransitioning = true;
+    const question = allQuestions[currentQuestionIndex];
+    const buttons = answersElement.getElementsByTagName('button');
+
+    for (let i = 0; i < buttons.length; i++) {
+        buttons[i].disabled = true;
+        if (i === question.correct) {
+            buttons[i].classList.remove('bg-blue-500', 'hover:bg-blue-600');
+            buttons[i].classList.add('bg-green-500');
+        } else if (i === selectedIndex) {
+            buttons[i].classList.remove('bg-blue-500', 'hover:bg-blue-600');
+            buttons[i].classList.add('bg-red-500');
         }
-        correctAnswers++;
-    } else {
-        resultElement.textContent = "Incorrect. The correct answer was: " + question.answers[question.correct];
-        resultElement.className = 'text-red-600 fade-in';
-        selectedButton.classList.remove('bg-blue-500', 'hover:bg-blue-600');
-        selectedButton.classList.add('bg-red-500', 'hover:bg-red-600');
-        if (isSoundOn) {
-            incorrectSound.play();
-        }
-        incorrectAnswers++;
     }
-    
-    document.getElementById('score').textContent = `Correct: ${correctAnswers} | Incorrect: ${incorrectAnswers}`;
-    currentQuestion++;
-    
+
+    if (selectedIndex === question.correct) {
+        score++;
+        resultElement.textContent = 'Correct!';
+        resultElement.classList.add('text-green-500');
+        if (!isMuted) correctSound.play();
+    } else {
+        incorrectAnswers++;
+        resultElement.textContent = 'Incorrect!';
+        resultElement.classList.add('text-red-500');
+        if (!isMuted) incorrectSound.play();
+    }
+
+    updateScore();
+
     setTimeout(() => {
-        if (timeLeft > 0 && currentQuestion < allQuestions.length) {
-            loadQuestion();
-        } else if (timeLeft > 0) {
-            endGame();
-        }
-    }, 1000);
+        resultElement.textContent = '';
+        resultElement.classList.remove('text-green-500', 'text-red-500');
+        currentQuestionIndex++;
+        displayQuestion();
+        isTransitioning = false;
+    }, 1500);
+}
+
+function updateScore() {
+    scoreElement.textContent = `Score: ${score} | Incorrect: ${incorrectAnswers}`;
 }
 
 function startTimer() {
+    timeLeft = 30;
     updateTimerDisplay();
-    timerInterval = setInterval(() => {
+    timer = setInterval(() => {
         timeLeft--;
         updateTimerDisplay();
         if (timeLeft <= 0) {
-            clearInterval(timerInterval);
-            endGame();
+            clearInterval(timer);
+            checkAnswer(-1);
         }
     }, 1000);
 }
 
+function resetTimer() {
+    clearInterval(timer);
+    startTimer();
+}
+
 function updateTimerDisplay() {
-    const timerElement = document.getElementById('timer');
-    timerElement.textContent = `Time left: ${timeLeft} seconds`;
-    
-    if (timeLeft <= 17) {
+    timerElement.textContent = `Time left: ${timeLeft}s`;
+    if (timeLeft <= 5) {
         timerElement.classList.add('timer-warning');
     } else {
         timerElement.classList.remove('timer-warning');
@@ -126,69 +143,80 @@ function updateTimerDisplay() {
 }
 
 function endGame() {
-    clearInterval(timerInterval);
-    if (isSoundOn) {
-        backgroundMusic.pause();
-        backgroundMusic.currentTime = 0;
-    }
-    const container = document.getElementById('game-container');
-    container.innerHTML = `
-        <h1 class="text-3xl font-bold text-center mb-6 text-blue-600">Quiz Completed!</h1>
-        <p class="text-xl text-center mb-2">Time's up!</p>
-        <p class="text-lg text-center mb-4">Your final score:</p>
-        <p class="text-center mb-2">Correct answers: ${correctAnswers}</p>
-        <p class="text-center mb-4">Incorrect answers: ${incorrectAnswers}</p>
-        <button id="get-tutoring-button" class="bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded block mx-auto mb-4 w-full md:w-1/2">Get Free Tutoring</button>
-        <button id="restart-button" class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded block mx-auto w-full md:w-1/2">Play Again</button>
-    `;
-    document.getElementById('get-tutoring-button').addEventListener('click', openTutoringPage);
-    document.getElementById('restart-button').addEventListener('click', restartGame);
-}
+    clearInterval(timer);
+    gameContent.classList.add('hidden');
+    startMenu.classList.remove('hidden');
 
-function restartGame() {
-    currentQuestion = 0;
-    correctAnswers = 0;
-    incorrectAnswers = 0;
-    timeLeft = 90;
-    const container = document.getElementById('game-container');
-    container.innerHTML = `
-        <h1 class="text-3xl font-bold text-center mb-6 text-blue-600">Who Wants To Be A Chemistry Buff?</h1>
-        <div id="volume-control" class="text-right mb-4">
-            <button id="volume-toggle" class="text-2xl">
-                <i class="fas fa-volume-${isSoundOn ? 'up' : 'mute'}"></i>
-            </button>
-        </div>
-        <div id="start-menu" class="text-center">
+    const attempted = score + incorrectAnswers;
+    const percentageCorrect = attempted > 0 ? (score / attempted * 100).toFixed(2) : 0;
+
+    let resultsHTML = `
+        <h2 class="text-2xl font-bold mb-4">Quiz Completed!</h2>
+        <p>Topics Covered: Chemistry Trivia</p>
+        <p>Questions Attempted: ${attempted}</p>
+        <p>Correct Answers: ${score}</p>
+        <p>Incorrect Answers: ${incorrectAnswers}</p>
+        <p>Percentage Correct: ${percentageCorrect}%</p>
+    `;
+
+    let personalBestAchieved = false;
+
+    if (attempted > sessionBest.attempted) {
+        sessionBest.attempted = attempted;
+        resultsHTML += `<p class="text-green-500 font-bold outline-gold">Personal Best For This Session: Questions Attempted!</p>`;
+        personalBestAchieved = true;
+    }
+    if (score > sessionBest.correct) {
+        sessionBest.correct = score;
+        resultsHTML += `<p class="text-green-500 font-bold outline-gold">Personal Best For This Session: Correct Answers!</p>`;
+        personalBestAchieved = true;
+    }
+    if (incorrectAnswers > sessionBest.incorrect) {
+        sessionBest.incorrect = incorrectAnswers;
+    }
+    if (parseFloat(percentageCorrect) > sessionBest.percentage) {
+        sessionBest.percentage = parseFloat(percentageCorrect);
+        resultsHTML += `<p class="text-green-500 font-bold outline-gold">Personal Best For This Session: Percentage Correct!</p>`;
+        personalBestAchieved = true;
+    }
+
+    if (personalBestAchieved && !isMuted) {
+        personalBestSound.play();
+    }
+
+    resultsHTML += `
+        <button id="play-again" class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded mt-4">Play Again</button>
+    `;
+
+    startMenu.innerHTML = resultsHTML;
+
+    document.getElementById('play-again').addEventListener('click', () => {
+        startMenu.innerHTML = `
             <button id="get-tutoring-button" class="bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded mb-4 w-full md:w-1/2 mx-auto">Get Free Tutoring</button>
             <br>
             <button id="start-button" class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded w-full md:w-1/2 mx-auto">Start Game</button>
-        </div>
-        <div id="game-content" class="hidden">
-            <div id="timer" class="text-2xl font-bold text-center mb-4"></div>
-            <div id="question-container" class="mb-6">
-                <p id="question" class="text-xl font-semibold mb-4"></p>
-                <div id="answers" class="grid grid-cols-1 gap-4"></div>
-            </div>
-            <div id="result" class="text-center mb-4 font-bold"></div>
-            <p id="score" class="text-center font-semibold"></p>
-        </div>
-    `;
-    initializeGame();
+        `;
+        document.getElementById('start-button').addEventListener('click', startGame);
+        document.getElementById('get-tutoring-button').addEventListener('click', getTutoring);
+    });
+
+    backgroundMusic.pause();
+    backgroundMusic.currentTime = 0;
 }
 
-function toggleSound() {
-    isSoundOn = !isSoundOn;
-    const icon = volumeToggle.querySelector('i');
-    if (isSoundOn) {
-        icon.classList.remove('fa-volume-mute');
-        icon.classList.add('fa-volume-up');
-        backgroundMusic.play();
-    } else {
-        icon.classList.remove('fa-volume-up');
-        icon.classList.add('fa-volume-mute');
-        backgroundMusic.pause();
-    }
+function toggleVolume() {
+    isMuted = !isMuted;
+    backgroundMusic.muted = isMuted;
+    correctSound.muted = isMuted;
+    incorrectSound.muted = isMuted;
+    personalBestSound.muted = isMuted;
+    volumeToggle.innerHTML = isMuted ? '<i class="fas fa-volume-mute"></i>' : '<i class="fas fa-volume-up"></i>';
 }
 
-// Initialize the game when the script loads
-document.addEventListener('DOMContentLoaded', initializeGame);
+function getTutoring() {
+    window.open('https://calendly.com/d/zd9-3jd-v89/free-chemistry-tutoring-session', '_blank');
+}
+
+startButton.addEventListener('click', startGame);
+volumeToggle.addEventListener('click', toggleVolume);
+document.getElementById('get-tutoring-button').addEventListener('click', getTutoring);
