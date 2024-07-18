@@ -92,8 +92,8 @@
     {
         "questionId": "TF0000016",
         "question": "What is the tangent of 30 degrees?",
-        "answers": ["1/√3", "√3/3", "1", "√3"],
-        "correct": "1/√3"
+        "answers": ["2/√3", "√3/3", "1", "√3"],
+        "correct": "√3/3"
     },
     {
         "questionId": "TF0000017",
