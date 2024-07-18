@@ -243,7 +243,7 @@
         "questionId": "PV0000041",
         "question": "What is the SI unit of magnetic field strength?",
         "answers": ["Tesla", "Ampere per meter", "Weber per meter", "Henry per meter"],
-        "correct": "Ampere per meter"
+        "correct": "Tesla"
     },
     {
         "questionId": "PV0000042",
