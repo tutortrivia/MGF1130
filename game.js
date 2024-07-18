@@ -27,11 +27,11 @@ let sessionBest = {
     incorrect: 0,
     percentage: 0
 };
-let currentLibrary = 'chemistry';
+let currentLibrary = 'grammar';
+let currentQuestions = [];
 
 function getAvailableLibraries() {
-    // In a real-world scenario, this would be implemented server-side
-    return ['chemistry', 'grammar', 'history', 'mathematics'];
+    return Object.keys(allQuestions);
 }
 
 function populateLibrarySelect() {
@@ -53,7 +53,8 @@ function shuffleArray(array) {
 }
 
 function startGame() {
-    shuffleArray(allQuestions);
+    currentQuestions = [...allQuestions[currentLibrary]];
+    shuffleArray(currentQuestions);
     currentQuestionIndex = 0;
     score = 0;
     incorrectAnswers = 0;
@@ -68,12 +69,12 @@ function startGame() {
 }
 
 function displayQuestion() {
-    if (currentQuestionIndex >= allQuestions.length || timeLeft <= 0) {
+    if (currentQuestionIndex >= currentQuestions.length || timeLeft <= 0) {
         endGame();
         return;
     }
 
-    const question = allQuestions[currentQuestionIndex];
+    const question = currentQuestions[currentQuestionIndex];
     questionElement.textContent = question.question;
     answersElement.innerHTML = '';
 
@@ -100,7 +101,7 @@ function displayQuestion() {
 
 function checkAnswer(selectedIndex) {
     isTransitioning = true;
-    const question = allQuestions[currentQuestionIndex];
+    const question = currentQuestions[currentQuestionIndex];
     const buttons = answersElement.getElementsByTagName('button');
     const correctIndex = [...buttons].findIndex(button => button.textContent === question.answers[question.correct]);
 
@@ -242,7 +243,7 @@ function toggleVolume() {
 }
 
 function getTutoring() {
-    window.open('https://calendly.com/d/zd9-3jd-v89/free-chemistry-tutoring-session', '_blank');
+    window.open('https://www.palmbeachstate.edu/slc/', '_blank');
 }
 
 startButton.addEventListener('click', startGame);
