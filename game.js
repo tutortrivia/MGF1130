@@ -211,16 +211,23 @@ function endGame() {
     }
 
     resultsHTML += `
-        <select id="library-select" class="bg-white border border-gray-300 rounded-md py-2 px-4 mb-4 w-full md:w-1/2 mx-auto"></select>
-        <br>
         <button id="play-again" class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded mt-4">Play Again</button>
     `;
 
     startMenu.innerHTML = resultsHTML;
 
-    populateLibrarySelect();
-    document.getElementById('library-select').value = currentLibrary;
-    document.getElementById('play-again').addEventListener('click', startGame);
+    document.getElementById('play-again').addEventListener('click', () => {
+        startMenu.innerHTML = `
+            <select id="library-select" class="bg-white border border-gray-300 rounded-md py-2 px-4 mb-4 w-full md:w-1/2 mx-auto"></select>
+            <button id="get-tutoring-button" class="bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded mb-4 w-full md:w-1/2 mx-auto">Get Free Tutoring</button>
+            <br>
+            <button id="start-button" class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded w-full md:w-1/2 mx-auto">Start Game</button>
+        `;
+        populateLibrarySelect();
+        librarySelect.value = currentLibrary;
+        document.getElementById('start-button').addEventListener('click', startGame);
+        document.getElementById('get-tutoring-button').addEventListener('click', getTutoring);
+    });
 
     backgroundMusic.pause();
     backgroundMusic.currentTime = 0;
