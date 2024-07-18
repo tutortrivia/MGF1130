@@ -1,5 +1,5 @@
 # 'Trivia Buff' style games
-By Jesse Rogers @MindCraftGames0 on Twitter
+By Jesse Rogers @MindCraftGames0 on Twitter.
 Jesse works at the Student Learning Center at Palm Beach State College who provided generous support and encouragement in the production of this project. Make a free appointment at https://www.palmbeachstate.edu/slc/
 
 Inspired by trivia game shows, test your skills and have fun learning!
