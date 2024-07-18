@@ -1,248 +1,262 @@
-const allQuestions = [
-    {
-        question: "What is the chemical symbol for water?",
-        answers: ["HO", "H2O", "OH", "H2"],
-        correct: 1
-    },
-    {
-        question: "What is the atomic number of carbon?",
-        answers: ["6", "8", "12", "14"],
-        correct: 0
-    },
-    {
-        question: "What is the most abundant gas in Earth's atmosphere?",
-        answers: ["Oxygen", "Hydrogen", "Carbon Dioxide", "Nitrogen"],
-        correct: 3
-    },
-    {
-        question: "What element does 'O' represent on the periodic table?",
-        answers: ["Osmium", "Oxygen", "Oxide", "Oganesson"],
-        correct: 1
-    },
-    {
-        question: "What is the chemical formula for table salt?",
-        answers: ["NaCl", "KCl", "CaCl2", "MgCl2"],
-        correct: 0
-    },
-    {
-        question: "Who is known as the father of modern chemistry?",
-        answers: ["Albert Einstein", "Isaac Newton", "Antoine Lavoisier", "Dmitri Mendeleev"],
-        correct: 2
-    },
-    {
-        question: "What is the pH of pure water?",
-        answers: ["5", "6", "7", "8"],
-        correct: 2
-    },
-    {
-        question: "Which element is a noble gas?",
-        answers: ["Hydrogen", "Oxygen", "Chlorine", "Argon"],
-        correct: 3
-    },
-    {
-        question: "What is the main component of natural gas?",
-        answers: ["Methane", "Ethane", "Propane", "Butane"],
-        correct: 0
-    },
-    {
-        question: "What is the molar mass of water (H2O)?",
-        answers: ["16 g/mol", "18 g/mol", "20 g/mol", "22 g/mol"],
-        correct: 1
-    },
-    {
-        question: "Which element has the highest electronegativity?",
-        answers: ["Fluorine", "Oxygen", "Nitrogen", "Chlorine"],
-        correct: 0
-    },
-    {
-        question: "What type of bond involves the sharing of electron pairs between atoms?",
-        answers: ["Ionic bond", "Covalent bond", "Metallic bond", "Hydrogen bond"],
-        correct: 1
-    },
-    {
-        question: "What is the process of converting a liquid into a gas called?",
-        answers: ["Condensation", "Evaporation", "Sublimation", "Deposition"],
-        correct: 2
-    },
-    {
-        question: "Which of the following is an alkaline earth metal?",
-        answers: ["Sodium", "Calcium", "Iron", "Copper"],
-        correct: 1
-    },
-    {
-        question: "What is the chemical name for baking soda?",
-        answers: ["Sodium chloride", "Sodium bicarbonate", "Calcium carbonate", "Potassium chloride"],
-        correct: 1
-    },
-    {
-        question: "Which element is liquid at room temperature?",
-        answers: ["Mercury", "Bromine", "Gallium", "Francium"],
-        correct: 0
-    },
-    {
-        question: "What is the charge of an electron?",
-        answers: ["+1", "0", "-1", "-2"],
-        correct: 2
-    },
-    {
-        question: "What is the common name for the chemical compound H2SO4?",
-        answers: ["Hydrochloric acid", "Sulfuric acid", "Nitric acid", "Acetic acid"],
-        correct: 1
-    },
-    {
-        question: "Which element has the atomic number 1?",
-        answers: ["Helium", "Hydrogen", "Lithium", "Beryllium"],
-        correct: 1
-    },
-    {
-        question: "What is the chemical formula for ammonia?",
-        answers: ["NH3", "NO2", "N2O", "NO3"],
-        correct: 0
-    },
-    {
-        question: "What is the hardest naturally occurring substance on Earth?",
-        answers: ["Quartz", "Topaz", "Corundum", "Diamond"],
-        correct: 3
-    },
-    {
-        question: "What is the name of the compound with the formula CO2?",
-        answers: ["Carbon monoxide", "Carbon dioxide", "Carbon trioxide", "Carbide"],
-        correct: 1
-    },
-    {
-        question: "What is the main acid found in vinegar?",
-        answers: ["Citric acid", "Acetic acid", "Lactic acid", "Sulfuric acid"],
-        correct: 1
-    },
-    {
-        question: "Which scientist developed the periodic table?",
-        answers: ["Niels Bohr", "Marie Curie", "Dmitri Mendeleev", "Albert Einstein"],
-        correct: 2
-    },
-    {
-        question: "What is the chemical symbol for gold?",
-        answers: ["Au", "Ag", "Pb", "Pt"],
-        correct: 0
-    },
-    {
-        question: "What is the main gas found in the air we breathe?",
-        answers: ["Oxygen", "Carbon dioxide", "Nitrogen", "Helium"],
-        correct: 2
-    },
-    {
-        question: "Which of the following elements is a halogen?",
-        answers: ["Lithium", "Magnesium", "Fluorine", "Neon"],
-        correct: 2
-    },
-    {
-        question: "What is the name of the reaction where two substances combine to form a new compound?",
-        answers: ["Decomposition", "Combination", "Single displacement", "Double displacement"],
-        correct: 1
-    },
-    {
-        question: "Which compound is commonly known as laughing gas?",
-        answers: ["Nitrous oxide", "Nitric oxide", "Nitrogen dioxide", "Ammonia"],
-        correct: 0
-    },
-    {
-        question: "What is the process of a solid changing directly to a gas called?",
-        answers: ["Evaporation", "Condensation", "Sublimation", "Deposition"],
-        correct: 2
-    },
-    {
-        question: "Which element is known as the 'king of chemicals'?",
-        answers: ["Oxygen", "Hydrogen", "Sulfur", "Carbon"],
-        correct: 3
-    },
-    {
-        question: "What is the chemical name for rust?",
-        answers: ["Iron sulfate", "Iron chloride", "Iron oxide", "Iron nitrate"],
-        correct: 2
-    },
-    {
-        question: "Which element is used in pencils?",
-        answers: ["Lead", "Carbon", "Graphite", "Sulfur"],
-        correct: 2
-    },
-    {
-        question: "What is the formula for calculating the number of moles?",
-        answers: ["Mass/Volume", "Volume/Number of Particles", "Mass/Molar Mass", "Number of Particles/Molar Mass"],
-        correct: 2
-    },
-    {
-        question: "What is the primary element found in organic compounds?",
-        answers: ["Oxygen", "Hydrogen", "Nitrogen", "Carbon"],
-        correct: 3
-    },
-    {
-        question: "Which of the following is a transition metal?",
-        answers: ["Sodium", "Magnesium", "Iron", "Chlorine"],
-        correct: 2
-    },
-    {
-        question: "What is the molecular geometry of methane (CH4)?",
-        answers: ["Linear", "Trigonal planar", "Tetrahedral", "Bent"],
-        correct: 2
-    },
-    {
-        question: "What is the common name for NaOH?",
-        answers: ["Baking soda", "Bleach", "Lye", "Salt"],
-        correct: 2
-    },
-    {
-        question: "Which acid is commonly found in car batteries?",
-        answers: ["Hydrochloric acid", "Sulfuric acid", "Nitric acid", "Phosphoric acid"],
-        correct: 1
-    },
-     {
-        question: "What is the atomic number of oxygen?",
-        answers: ["6", "7", "8", "9"],
-        correct: 2
-    },
-    {
-        question: "Which of the following is not a state of matter?",
-        answers: ["Solid", "Liquid", "Gas", "Energy"],
-        correct: 3
-    },
-    {
-        question: "What is the chemical symbol for silver?",
-        answers: ["Si", "Ag", "Au", "Sr"],
-        correct: 1
-    },
-    {
-        question: "Which element is essential for life and is found in all organic compounds?",
-        answers: ["Hydrogen", "Oxygen", "Nitrogen", "Carbon"],
-        correct: 3
-    },
-    {
-        question: "What is the pH of a neutral solution?",
-        answers: ["0", "7", "14", "10"],
-        correct: 1
-    },
-    {
-        question: "Which of these is not a noble gas?",
-        answers: ["Neon", "Argon", "Krypton", "Nitrogen"],
-        correct: 3
-    },
-    {
-        question: "What is the chemical formula for glucose?",
-        answers: ["C6H12O6", "C12H22O11", "CH3COOH", "NaHCO3"],
-        correct: 0
-    },
-    {
-        question: "Which element has the chemical symbol 'Fe'?",
-        answers: ["Iron", "Fluorine", "Francium", "Iodine"],
-        correct: 0
-    },
-    {
-        question: "What is the most abundant element in the Earth's crust?",
-        answers: ["Silicon", "Aluminum", "Iron", "Oxygen"],
-        correct: 3
-    },
-    {
-        question: "Which of these is an alkali metal?",
-        answers: ["Magnesium", "Calcium", "Potassium", "Aluminum"],
-        correct: 2
-    }
-];
-
+const allQuestions = {
+    grammar: [
+        {
+            question: "Which of the following is a proper noun?",
+            answers: ["Dog", "Paris", "Happy", "Run"],
+            correct: 1
+        },
+        {
+            question: "What is the past tense of 'eat'?",
+            answers: ["Eated", "Ate", "Eaten", "Eating"],
+            correct: 1
+        },
+        {
+            question: "Which word is an adverb?",
+            answers: ["Quick", "Quickly", "Quickness", "Quicken"],
+            correct: 1
+        },
+        {
+            question: "What is the plural of 'child'?",
+            answers: ["Childs", "Childen", "Children", "Childres"],
+            correct: 2
+        },
+        {
+            question: "Which sentence uses the correct form of 'there'?",
+            answers: ["Their going to the store.", "There going to the store.", "They're going to the store.", "Theyre going to the store."],
+            correct: 2
+        },
+        {
+            question: "What is the comparative form of 'good'?",
+            answers: ["Gooder", "Better", "Best", "More good"],
+            correct: 1
+        },
+        {
+            question: "Which word is a conjunction?",
+            answers: ["Quickly", "However", "Jumping", "Excited"],
+            correct: 1
+        },
+        {
+            question: "What is the possessive form of 'it'?",
+            answers: ["Its", "It's", "Itses", "Itse"],
+            correct: 0
+        },
+        {
+            question: "Which sentence is in the passive voice?",
+            answers: ["The cat chased the mouse.", "The mouse was chased by the cat.", "The mouse ran from the cat.", "The cat and mouse played."],
+            correct: 1
+        },
+        {
+            question: "What part of speech is 'beautifully'?",
+            answers: ["Adjective", "Noun", "Verb", "Adverb"],
+            correct: 3
+        }
+    ],
+    trigFunctions: [
+        {
+            question: "What is the sine of 30 degrees?",
+            answers: ["1/2", "√3/2", "√2/2", "1"],
+            correct: 0
+        },
+        {
+            question: "What is the cosine of 60 degrees?",
+            answers: ["1/2", "√3/2", "√2/2", "1"],
+            correct: 0
+        },
+        {
+            question: "What is the tangent of 45 degrees?",
+            answers: ["0", "1", "√3", "Undefined"],
+            correct: 1
+        },
+        {
+            question: "Which trig function is equal to the opposite side divided by the hypotenuse?",
+            answers: ["Sine", "Cosine", "Tangent", "Secant"],
+            correct: 0
+        },
+        {
+            question: "What is the cosine of 0 degrees?",
+            answers: ["0", "1", "-1", "1/2"],
+            correct: 1
+        },
+        {
+            question: "What is the sine of 90 degrees?",
+            answers: ["0", "1", "-1", "1/2"],
+            correct: 1
+        },
+        {
+            question: "What is the tangent of 0 degrees?",
+            answers: ["0", "1", "-1", "Undefined"],
+            correct: 0
+        },
+        {
+            question: "Which trig function is equal to sine divided by cosine?",
+            answers: ["Tangent", "Cotangent", "Secant", "Cosecant"],
+            correct: 0
+        },
+        {
+            question: "What is the period of the sine function?",
+            answers: ["π", "2π", "π/2", "4π"],
+            correct: 1
+        },
+        {
+            question: "What is the cosine of 180 degrees?",
+            answers: ["0", "1", "-1", "1/2"],
+            correct: 2
+        }
+    ],
+    periodicTable: [
+        {
+            question: "What is the atomic number of Carbon?",
+            answers: ["5", "6", "7", "8"],
+            correct: 1
+        },
+        {
+            question: "Which element has the chemical symbol 'Na'?",
+            answers: ["Nitrogen", "Neon", "Sodium", "Nickel"],
+            correct: 2
+        },
+        {
+            question: "What is the most abundant element in the Earth's atmosphere?",
+            answers: ["Oxygen", "Carbon", "Nitrogen", "Hydrogen"],
+            correct: 2
+        },
+        {
+            question: "Which of these is a noble gas?",
+            answers: ["Chlorine", "Helium", "Fluorine", "Bromine"],
+            correct: 1
+        },
+        {
+            question: "What is the atomic number of Gold?",
+            answers: ["47", "79", "118", "29"],
+            correct: 1
+        },
+        {
+            question: "Which element is liquid at room temperature?",
+            answers: ["Mercury", "Aluminum", "Copper", "Neon"],
+            correct: 0
+        },
+        {
+            question: "What is the chemical symbol for Iron?",
+            answers: ["Ir", "Fe", "In", "I"],
+            correct: 1
+        },
+        {
+            question: "Which element is essential for life and is found in all organic compounds?",
+            answers: ["Oxygen", "Nitrogen", "Carbon", "Hydrogen"],
+            correct: 2
+        },
+        {
+            question: "What is the most electronegative element?",
+            answers: ["Oxygen", "Chlorine", "Fluorine", "Nitrogen"],
+            correct: 2
+        },
+        {
+            question: "Which of these is an alkali metal?",
+            answers: ["Magnesium", "Aluminum", "Potassium", "Calcium"],
+            correct: 2
+        }
+    ],
+    physicsVocabulary: [
+        {
+            question: "What is the SI unit of force?",
+            answers: ["Watt", "Joule", "Newton", "Pascal"],
+            correct: 2
+        },
+        {
+            question: "What is the term for the resistance of an object to a change in its motion?",
+            answers: ["Momentum", "Inertia", "Acceleration", "Velocity"],
+            correct: 1
+        },
+        {
+            question: "What is the measure of the amount of matter in an object?",
+            answers: ["Weight", "Density", "Volume", "Mass"],
+            correct: 3
+        },
+        {
+            question: "What is the term for the transfer of heat through direct contact?",
+            answers: ["Conduction", "Convection", "Radiation", "Insulation"],
+            correct: 0
+        },
+        {
+            question: "What is the SI unit of electric current?",
+            answers: ["Volt", "Watt", "Ampere", "Ohm"],
+            correct: 2
+        },
+        {
+            question: "What is the term for the change in velocity over time?",
+            answers: ["Speed", "Acceleration", "Distance", "Displacement"],
+            correct: 1
+        },
+        {
+            question: "What is the SI unit of energy and work?",
+            answers: ["Watt", "Joule", "Newton", "Pascal"],
+            correct: 1
+        },
+        {
+            question: "What is the term for the force that opposes the relative motion of surfaces in contact?",
+            answers: ["Tension", "Friction", "Gravity", "Pressure"],
+            correct: 1
+        },
+        {
+            question: "What is the SI unit of power?",
+            answers: ["Watt", "Joule", "Newton", "Volt"],
+            correct: 0
+        },
+        {
+            question: "What is the term for the ability to do work?",
+            answers: ["Force", "Energy", "Momentum", "Velocity"],
+            correct: 1
+        }
+    ],
+    numberSets: [
+        {
+            question: "Which set does the number 5 belong to?",
+            answers: ["Natural Numbers", "Irrational Numbers", "Complex Numbers", "All of the above"],
+            correct: 3
+        },
+        {
+            question: "Which set does the number -3 belong to?",
+            answers: ["Natural Numbers", "Whole Numbers", "Integers", "Rational Numbers"],
+            correct: 2
+        },
+        {
+            question: "Which set does the number 0 belong to?",
+            answers: ["Natural Numbers", "Whole Numbers", "Integers", "All of the above"],
+            correct: 3
+        },
+        {
+            question: "Which set does the number 1/2 belong to?",
+            answers: ["Natural Numbers", "Whole Numbers", "Rational Numbers", "Irrational Numbers"],
+            correct: 2
+        },
+        {
+            question: "Which set does the number √2 belong to?",
+            answers: ["Rational Numbers", "Irrational Numbers", "Complex Numbers", "Real Numbers"],
+            correct: 1
+        },
+        {
+            question: "Which set does the number π belong to?",
+            answers: ["Rational Numbers", "Irrational Numbers", "Complex Numbers", "Imaginary Numbers"],
+            correct: 1
+        },
+        {
+            question: "Which set does the number i (imaginary unit) belong to?",
+            answers: ["Real Numbers", "Irrational Numbers", "Complex Numbers", "Imaginary Numbers"],
+            correct: 2
+        },
+        {
+            question: "Which is the smallest set that contains all integers?",
+            answers: ["Natural Numbers", "Whole Numbers", "Integers", "Rational Numbers"],
+            correct: 2
+        },
+        {
+            question: "Which is the largest set among the following?",
+            answers: ["Natural Numbers", "Rational Numbers", "Irrational Numbers", "Real Numbers"],
+            correct: 3
+        },
+        {
+            question: "Which set does the number 2.5 belong to?",
+            answers: ["Natural Numbers", "Whole Numbers", "Integers", "Rational Numbers"],
+            correct: 3
+        }
+    ]
+};
