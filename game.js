@@ -83,13 +83,13 @@ function displayQuestion() {
     const shuffledAnswers = [...question.answers];
     shuffleArray(shuffledAnswers);
 
-    shuffledAnswers.forEach((answer, index) => {
+    shuffledAnswers.forEach((answer) => {
         const button = document.createElement('button');
         button.textContent = answer;
         button.classList.add('bg-blue-500', 'hover:bg-blue-600', 'text-white', 'font-bold', 'py-2', 'px-4', 'rounded', 'w-full');
         button.addEventListener('click', () => {
             if (!isTransitioning) {
-                checkAnswer(answer, shuffledAnswers, question);
+                checkAnswer(answer, question.correct);
             }
         });
         answersElement.appendChild(button);
@@ -100,19 +100,16 @@ function displayQuestion() {
     resultElement.classList.add('text-blue-500');
 }
 
-function checkAnswer(selectedAnswer, shuffledAnswers, question) {
+function checkAnswer(selectedAnswer, correctAnswer) {
     isTransitioning = true;
     const buttons = answersElement.getElementsByTagName('button');
-    const correctAnswer = question.answers[question.correct];
-    const selectedIndex = shuffledAnswers.indexOf(selectedAnswer);
-    const correctIndex = shuffledAnswers.indexOf(correctAnswer);
 
     for (let i = 0; i < buttons.length; i++) {
         buttons[i].disabled = true;
-        if (i === correctIndex) {
+        if (buttons[i].textContent === correctAnswer) {
             buttons[i].classList.remove('bg-blue-500', 'hover:bg-blue-600');
             buttons[i].classList.add('bg-green-500');
-        } else if (i === selectedIndex) {
+        } else if (buttons[i].textContent === selectedAnswer) {
             buttons[i].classList.remove('bg-blue-500', 'hover:bg-blue-600');
             buttons[i].classList.add('bg-red-500');
         }
