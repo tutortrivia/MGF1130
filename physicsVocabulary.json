@@ -272,8 +272,8 @@
     {
         "questionId": "PV0000046",
         "question": "What is the term for the ratio of the mass of a substance to the mass of an equal volume of water?",
-        "answers": ["Density", "Specific gravity", "Weight", "Volume"],
-        "correct": "Specific gravity"
+        "answers": ["Density", "Relative Density", "Weight", "Volume"],
+        "correct": "Relative Density"
     },
     {
         "questionId": "PV0000047",
