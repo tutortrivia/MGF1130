@@ -63,8 +63,8 @@ async function startGame() {
     shuffleArray(currentQuestions);
     currentQuestionIndex = 0;
     score = 0;
-    updateScore();
     incorrectAnswers = 0;
+    updateScore();
     timeLeft = 90;
     startMenu.classList.add('hidden');
     gameContent.classList.remove('hidden');
