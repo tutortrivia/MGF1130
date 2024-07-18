@@ -38,8 +38,8 @@
     {
         "questionId": "GR0000007",
         "question": "Which word is a conjunction?",
-        "answers": ["Quickly", "However", "Jumping", "Excited"],
-        "correct": "However"
+        "answers": ["Quickly", "But", "Jumping", "Excited"],
+        "correct": "But"
     },
     {
         "questionId": "GR0000008",
@@ -72,7 +72,7 @@
         "correct": "Before"
     },
     {
-        "questionId": "GR00000113",
+        "questionId": "GR0000013",
         "question": "What is the plural of 'mouse'?",
         "answers": ["Mouses", "Mice", "Mices", "Mousees"],
         "correct": "Mice"
@@ -91,9 +91,9 @@
     },
     {
         "questionId": "GR0000016",
-        "question": "Which word is a pronoun?",
-        "answers": ["He", "Happy", "Sing", "Blue"],
-        "correct": "He"
+        "question": "Which word is an auxiliary verb?",
+        "answers": ["Can", "Happy", "Sing", "Blue"],
+        "correct": "Can"
     },
     {
         "questionId": "GR0000017",
@@ -115,9 +115,9 @@
     },
     {
         "questionId": "GR0000020",
-        "question": "Which word is an adjective?",
-        "answers": ["Run", "Beautiful", "Quickly", "However"],
-        "correct": "Beautiful"
+        "question": "Which sentence correctly uses the word 'affect'?",
+        "answers": ["The weather will affect our plans.", "He was deeply affect by the news.", "This policy has a positive affect.", "She didn't know how to affect her emotions."],
+        "correct": "The weather will affect our plans."
     },
     {
         "questionId": "GR0000021",
@@ -163,9 +163,9 @@
     },
     {
         "questionId": "GR0000028",
-        "question": "Which word is an adjective?",
-        "answers": ["Run", "Beautiful", "Quickly", "However"],
-        "correct": "Beautiful"
+        "question": "Which word is a gerund?",
+        "answers": ["Running", "Quickly", "Beautiful", "However"],
+        "correct": "Running"
     },
     {
         "questionId": "GR0000029",
@@ -211,9 +211,9 @@
     },
     {
         "questionId": "GR0000036",
-        "question": "Which word is an adverb?",
-        "answers": ["Quick", "Quickly", "Quickness", "Quicken"],
-        "correct": "Quickly"
+        "question": "Which sentence is correctly punctuated?",
+        "answers": ["My favorite colors are blue, green, and red.", "My favorite colors are: blue, green and red.", "My favorite colors are blue; green, and red.", "My favorite colors are blue green and red."],
+        "correct": "My favorite colors are blue, green, and red."
     },
     {
         "questionId": "GR0000037",
@@ -319,9 +319,9 @@
     },
     {
         "questionId": "GR0000054",
-        "question": "Which word is an adjective?",
-        "answers": ["Run", "Beautiful", "Quickly", "However"],
-        "correct": "Beautiful"
+        "question": "Which sentence uses the correct form of 'your'?",
+        "answers": ["Is this you're book?", "Is this your book?", "Is this your's book?", "Is this you'r book?"],
+        "correct": "Is this your book?"
     },
     {
         "questionId": "GR0000055",
