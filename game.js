@@ -11,8 +11,8 @@ const backgroundMusic = document.getElementById('backgroundMusic');
 const correctSound = document.getElementById('correctSound');
 const incorrectSound = document.getElementById('incorrectSound');
 const personalBestSound = new Audio('personalBest.mp3');
-const librarySelect = document.getElementById('library-select');
-const gameTitle = document.getElementById('game-title');
+let librarySelect = document.getElementById('library-select');
+let gameTitle = document.getElementById('game-title');
 
 let currentQuestionIndex = 0;
 let score = 0;
