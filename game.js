@@ -27,7 +27,7 @@ let sessionBest = {
     incorrect: 0,
     percentage: 0
 };
-let currentLibrary = 'grammar';
+let currentLibrary = 'Pharmacology';
 let currentQuestions = [];
 
 function getAvailableLibraries() {
