@@ -1,0 +1,302 @@
+[
+    {
+        "questionId": "TF0000001",
+        "question": "What is the sine of 30 degrees?",
+        "answers": ["1/2", "√3/2", "√2/2", "1"],
+        "correct": "1/2"
+    },
+    {
+        "questionId": "TF0000002",
+        "question": "What is the cosine of 60 degrees?",
+        "answers": ["1/2", "√3/2", "√2/2", "1"],
+        "correct": "1/2"
+    },
+    {
+        "questionId": "TF0000003",
+        "question": "What is the tangent of 45 degrees?",
+        "answers": ["0", "1", "√3", "Undefined"],
+        "correct": "1"
+    },
+    {
+        "questionId": "TF0000004",
+        "question": "Which trig function is equal to the opposite side divided by the hypotenuse?",
+        "answers": ["Sine", "Cosine", "Tangent", "Secant"],
+        "correct": "Sine"
+    },
+    {
+        "questionId": "TF0000005",
+        "question": "What is the cosine of 0 degrees?",
+        "answers": ["0", "1", "-1", "1/2"],
+        "correct": "1"
+    },
+    {
+        "questionId": "TF0000006",
+        "question": "What is the sine of 90 degrees?",
+        "answers": ["0", "1", "-1", "1/2"],
+        "correct": "1"
+    },
+    {
+        "questionId": "TF0000007",
+        "question": "What is the tangent of 0 degrees?",
+        "answers": ["0", "1", "-1", "Undefined"],
+        "correct": "0"
+    },
+    {
+        "questionId": "TF0000008",
+        "question": "Which trig function is equal to sine divided by cosine?",
+        "answers": ["Tangent", "Cotangent", "Secant", "Cosecant"],
+        "correct": "Tangent"
+    },
+    {
+        "questionId": "TF0000009",
+        "question": "What is the period of the sine function?",
+        "answers": ["π", "2π", "π/2", "4π"],
+        "correct": "2π"
+    },
+    {
+        "questionId": "TF0000010",
+        "question": "What is the cosine of 180 degrees?",
+        "answers": ["0", "1", "-1", "1/2"],
+        "correct": "-1"
+    },
+    {
+        "questionId": "TF0000011",
+        "question": "What is the sine of 45 degrees?",
+        "answers": ["1/2", "√2/2", "√3/2", "1"],
+        "correct": "√2/2"
+    },
+    {
+        "questionId": "TF0000012",
+        "question": "What is the tangent of 60 degrees?",
+        "answers": ["1/√3", "√3", "1", "2"],
+        "correct": "√3"
+    },
+    {
+        "questionId": "TF0000013",
+        "question": "Which trig function is equal to the adjacent side divided by the hypotenuse?",
+        "answers": ["Sine", "Cosine", "Tangent", "Secant"],
+        "correct": "Cosine"
+    },
+    {
+        "questionId": "TF0000014",
+        "question": "What is the cosine of 90 degrees?",
+        "answers": ["0", "1", "-1", "1/2"],
+        "correct": "0"
+    },
+    {
+        "questionId": "TF0000015",
+        "question": "What is the sine of 0 degrees?",
+        "answers": ["0", "1", "-1", "1/2"],
+        "correct": "0"
+    },
+    {
+        "questionId": "TF0000016",
+        "question": "What is the tangent of 30 degrees?",
+        "answers": ["2/√3", "√3/3", "1", "√3"],
+        "correct": "√3/3"
+    },
+    {
+        "questionId": "TF0000017",
+        "question": "Which trig function is equal to 1 divided by cosine?",
+        "answers": ["Tangent", "Cotangent", "Secant", "Cosecant"],
+        "correct": "Secant"
+    },
+    {
+        "questionId": "TF0000018",
+        "question": "What is the period of the cosine function?",
+        "answers": ["π", "2π", "π/2", "4π"],
+        "correct": "2π"
+    },
+    {
+        "questionId": "TF0000019",
+        "question": "What is the sine of 180 degrees?",
+        "answers": ["0", "1", "-1", "1/2"],
+        "correct": "0"
+    },
+    {
+        "questionId": "TF0000020",
+        "question": "What is the cosine of 45 degrees?",
+        "answers": ["1/2", "√2/2", "√3/2", "1"],
+        "correct": "√2/2"
+    },
+    {
+        "questionId": "TF0000021",
+        "question": "What is the tangent of 90 degrees?",
+        "answers": ["0", "1", "-1", "Undefined"],
+        "correct": "Undefined"
+    },
+    {
+        "questionId": "TF0000022",
+        "question": "Which trig function is equal to the opposite side divided by the adjacent side?",
+        "answers": ["Sine", "Cosine", "Tangent", "Secant"],
+        "correct": "Tangent"
+    },
+    {
+        "questionId": "TF0000023",
+        "question": "What is the sine of 60 degrees?",
+        "answers": ["1/2", "√2/2", "√3/2", "1"],
+        "correct": "√3/2"
+    },
+    {
+        "questionId": "TF0000024",
+        "question": "What is the cosine of 30 degrees?",
+        "answers": ["1/2", "√2/2", "√3/2", "1"],
+        "correct": "√3/2"
+    },
+    {
+        "questionId": "TF0000025",
+        "question": "What is the tangent of 180 degrees?",
+        "answers": ["0", "1", "-1", "Undefined"],
+        "correct": "0"
+    },
+    {
+        "questionId": "TF0000026",
+        "question": "Which trig function is equal to 1 divided by sine?",
+        "answers": ["Tangent", "Cotangent", "Secant", "Cosecant"],
+        "correct": "Cosecant"
+    },
+    {
+        "questionId": "TF0000027",
+        "question": "What is the period of the tangent function?",
+        "answers": ["π", "2π", "π/2", "π"],
+        "correct": "π"
+    },
+    {
+        "questionId": "TF0000028",
+        "question": "What is the sine of 270 degrees?",
+        "answers": ["0", "1", "-1", "1/2"],
+        "correct": "-1"
+    },
+    {
+        "questionId": "TF0000029",
+        "question": "What is the cosine of 270 degrees?",
+        "answers": ["0", "1", "-1", "1/2"],
+        "correct": "0"
+    },
+    {
+        "questionId": "TF0000030",
+        "question": "What is the tangent of 270 degrees?",
+        "answers": ["0", "1", "-1", "Undefined"],
+        "correct": "Undefined"
+    },
+    {
+        "questionId": "TF0000031",
+        "question": "Which trig function is equal to cosine divided by sine?",
+        "answers": ["Tangent", "Cotangent", "Secant", "Cosecant"],
+        "correct": "Cotangent"
+    },
+    {
+        "questionId": "TF0000032",
+        "question": "What is the sine of 120 degrees?",
+        "answers": ["1/2", "√2/2", "√3/2", "1"],
+        "correct": "√3/2"
+    },
+    {
+        "questionId": "TF0000033",
+        "question": "What is the cosine of 120 degrees?",
+        "answers": ["1/2", "-1/2", "√3/2", "-√3/2"],
+        "correct": "-1/2"
+    },
+    {
+        "questionId": "TF0000034",
+        "question": "What is the tangent of 120 degrees?",
+        "answers": ["-√3", "√3", "-1/√3", "1/√3"],
+        "correct": "-√3"
+    },
+    {
+        "questionId": "TF0000035",
+        "question": "Which trig function has a range of all real numbers?",
+        "answers": ["Sine", "Cosine", "Tangent", "Secant"],
+        "correct": "Tangent"
+    },
+    {
+        "questionId": "TF0000036",
+        "question": "What is the sine of 225 degrees?",
+        "answers": ["-1/√2", "1/√2", "-√2/2", "√2/2"],
+        "correct": "-√2/2"
+    },
+    {
+        "questionId": "TF0000037",
+        "question": "What is the cosine of 225 degrees?",
+        "answers": ["-1/√2", "1/√2", "-√2/2", "√2/2"],
+        "correct": "-√2/2"
+    },
+    {
+        "questionId": "TF0000038",
+        "question": "What is the tangent of 225 degrees?",
+        "answers": ["0", "1", "-1", "Undefined"],
+        "correct": "1"
+    },
+    {
+        "questionId": "TF0000039",
+        "question": "Which trig function has a range between -1 and 1, inclusive?",
+        "answers": ["Sine", "Cosine", "Tangent", "Secant"],
+        "correct": "Sine"
+    },
+    {
+        "questionId": "TF0000040",
+        "question": "What is the sine of 315 degrees?",
+        "answers": ["-1/√2", "1/√2", "-√2/2", "√2/2"],
+        "correct": "-√2/2"
+    },
+    {
+        "questionId": "TF0000041",
+        "question": "What is the cosine of 315 degrees?",
+        "answers": ["-1/√2", "1/√2", "-√2/2", "√2/2"],
+        "correct": "√2/2"
+    },
+    {
+        "questionId": "TF0000042",
+        "question": "What is the tangent of 315 degrees?",
+        "answers": ["0", "1", "-1", "Undefined"],
+        "correct": "-1"
+    },
+    {
+        "questionId": "TF0000043",
+        "question": "Which trig function is always positive in the first quadrant?",
+        "answers": ["Sine", "Cosine", "Tangent", "All of the above"],
+        "correct": "All of the above"
+    },
+    {
+        "questionId": "TF0000044",
+        "question": "What is the sine of 150 degrees?",
+        "answers": ["1/2", "√2/2", "√3/2", "1"],
+        "correct": "1/2"
+    },
+    {
+        "questionId": "TF0000045",
+        "question": "What is the cosine of 150 degrees?",
+        "answers": ["1/2", "-1/2", "√3/2", "-√3/2"],
+        "correct": "-√3/2"
+    },
+    {
+        "questionId": "TF0000046",
+        "question": "What is the tangent of 150 degrees?",
+        "answers": ["-√3", "√3", "-1/√3", "1/√3"],
+        "correct": "-1/√3"
+    },
+    {
+        "questionId": "TF0000047",
+        "question": "Which trig function is odd?",
+        "answers": ["Sine", "Cosine", "Both Sine and Cosine", "Neither Sine nor Cosine"],
+        "correct": "Sine"
+    },
+    {
+        "questionId": "TF0000048",
+        "question": "What is the sine of 240 degrees?",
+        "answers": ["-1/2", "√2/2", "-√3/2", "1"],
+        "correct": "-√3/2"
+    },
+    {
+        "questionId": "TF0000049",
+        "question": "What is the cosine of 240 degrees?",
+        "answers": ["1/2", "-1/2", "√3/2", "-√3/2"],
+        "correct": "-1/2"
+    },
+    {
+        "questionId": "TF0000050",
+        "question": "What is the tangent of 240 degrees?",
+        "answers": ["-√3", "√3", "-1/√3", "1/√3"],
+        "correct": "√3"
+    }
+]

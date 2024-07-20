@@ -1,0 +1,302 @@
+[
+    {
+        "questionId": "PV0000001",
+        "question": "What is the SI unit of force?",
+        "answers": ["Watt", "Joule", "Newton", "Pascal"],
+        "correct": "Newton"
+    },
+    {
+        "questionId": "PV0000002",
+        "question": "What is the term for the resistance of an object to a change in its motion?",
+        "answers": ["Momentum", "Inertia", "Acceleration", "Velocity"],
+        "correct": "Inertia"
+    },
+    {
+        "questionId": "PV0000003",
+        "question": "What is the measure of the amount of matter in an object?",
+        "answers": ["Weight", "Density", "Volume", "Mass"],
+        "correct": "Mass"
+    },
+    {
+        "questionId": "PV0000004",
+        "question": "What is the term for the transfer of heat through direct contact?",
+        "answers": ["Conduction", "Convection", "Radiation", "Insulation"],
+        "correct": "Conduction"
+    },
+    {
+        "questionId": "PV0000005",
+        "question": "What is the SI unit of electric current?",
+        "answers": ["Volt", "Watt", "Ampere", "Ohm"],
+        "correct": "Ampere"
+    },
+    {
+        "questionId": "PV0000006",
+        "question": "What is the term for the change in velocity over time?",
+        "answers": ["Speed", "Acceleration", "Distance", "Displacement"],
+        "correct": "Acceleration"
+    },
+    {
+        "questionId": "PV0000007",
+        "question": "What is the SI unit of energy and work?",
+        "answers": ["Watt", "Joule", "Newton", "Pascal"],
+        "correct": "Joule"
+    },
+    {
+        "questionId": "PV0000008",
+        "question": "What is the term for the force that opposes the relative motion of surfaces in contact?",
+        "answers": ["Tension", "Friction", "Gravity", "Pressure"],
+        "correct": "Friction"
+    },
+    {
+        "questionId": "PV0000009",
+        "question": "What is the SI unit of power?",
+        "answers": ["Watt", "Joule", "Newton", "Volt"],
+        "correct": "Watt"
+    },
+    {
+        "questionId": "PV0000010",
+        "question": "What is the term for the ability to do work?",
+        "answers": ["Force", "Energy", "Momentum", "Velocity"],
+        "correct": "Energy"
+    },
+    {
+        "questionId": "PV0000011",
+        "question": "What is the SI unit of pressure?",
+        "answers": ["Newton", "Pascal", "Bar", "Atmosphere"],
+        "correct": "Pascal"
+    },
+    {
+        "questionId": "PV0000012",
+        "question": "What is the term for the rate of change of displacement?",
+        "answers": ["Acceleration", "Velocity", "Speed", "Momentum"],
+        "correct": "Velocity"
+    },
+    {
+        "questionId": "PV0000013",
+        "question": "What is the SI unit of electric charge?",
+        "answers": ["Ampere", "Volt", "Coulomb", "Ohm"],
+        "correct": "Coulomb"
+    },
+    {
+        "questionId": "PV0000014",
+        "question": "What is the term for the transfer of heat through the movement of fluids?",
+        "answers": ["Conduction", "Convection", "Radiation", "Insulation"],
+        "correct": "Convection"
+    },
+    {
+        "questionId": "PV0000015",
+        "question": "What is the SI unit of frequency?",
+        "answers": ["Second", "Hertz", "Meter", "Decibel"],
+        "correct": "Hertz"
+    },
+    {
+        "questionId": "PV0000016",
+        "question": "What is the term for the product of mass and velocity?",
+        "answers": ["Force", "Energy", "Momentum", "Power"],
+        "correct": "Momentum"
+    },
+    {
+        "questionId": "PV0000017",
+        "question": "What is the SI unit of electric potential difference?",
+        "answers": ["Ampere", "Watt", "Volt", "Ohm"],
+        "correct": "Volt"
+    },
+    {
+        "questionId": "PV0000018",
+        "question": "What is the term for the transfer of heat through electromagnetic waves?",
+        "answers": ["Conduction", "Convection", "Radiation", "Insulation"],
+        "correct": "Radiation"
+    },
+    {
+        "questionId": "PV0000019",
+        "question": "What is the SI unit of magnetic flux density?",
+        "answers": ["Tesla", "Henry", "Weber", "Gauss"],
+        "correct": "Tesla"
+    },
+    {
+        "questionId": "PV0000020",
+        "question": "What is the term for the force exerted by a fluid at rest?",
+        "answers": ["Tension", "Friction", "Gravity", "Pressure"],
+        "correct": "Pressure"
+    },
+    {
+        "questionId": "PV0000021",
+        "question": "What is the SI unit of electric resistance?",
+        "answers": ["Ampere", "Volt", "Watt", "Ohm"],
+        "correct": "Ohm"
+    },
+    {
+        "questionId": "PV0000022",
+        "question": "What is the term for the rate of change of velocity?",
+        "answers": ["Speed", "Acceleration", "Momentum", "Force"],
+        "correct": "Acceleration"
+    },
+    {
+        "questionId": "PV0000023",
+        "question": "What is the SI unit of luminous intensity?",
+        "answers": ["Lumen", "Candela", "Lux", "Watt"],
+        "correct": "Candela"
+    },
+    {
+        "questionId": "PV0000024",
+        "question": "What is the term for the amount of matter per unit volume?",
+        "answers": ["Mass", "Weight", "Density", "Pressure"],
+        "correct": "Density"
+    },
+    {
+        "questionId": "PV0000025",
+        "question": "What is the SI unit of magnetic flux?",
+        "answers": ["Tesla", "Henry", "Weber", "Gauss"],
+        "correct": "Weber"
+    },
+    {
+        "questionId": "PV0000026",
+        "question": "What is the term for the force that attracts objects towards the center of the Earth?",
+        "answers": ["Friction", "Tension", "Gravity", "Pressure"],
+        "correct": "Gravity"
+    },
+    {
+        "questionId": "PV0000027",
+        "question": "What is the SI unit of capacitance?",
+        "answers": ["Henry", "Farad", "Coulomb", "Ohm"],
+        "correct": "Farad"
+    },
+    {
+        "questionId": "PV0000028",
+        "question": "What is the term for the energy possessed by an object due to its motion?",
+        "answers": ["Potential energy", "Kinetic energy", "Thermal energy", "Nuclear energy"],
+        "correct": "Kinetic energy"
+    },
+    {
+        "questionId": "PV0000029",
+        "question": "What is the SI unit of inductance?",
+        "answers": ["Henry", "Farad", "Weber", "Tesla"],
+        "correct": "Henry"
+    },
+    {
+        "questionId": "PV0000030",
+        "question": "What is the term for the force that stretches or compresses an object?",
+        "answers": ["Friction", "Tension", "Gravity", "Pressure"],
+        "correct": "Tension"
+    },
+    {
+        "questionId": "PV0000031",
+        "question": "What is the SI unit of temperature?",
+        "answers": ["Fahrenheit", "Celsius", "Kelvin", "Rankine"],
+        "correct": "Kelvin"
+    },
+    {
+        "questionId": "PV0000032",
+        "question": "What is the term for the energy possessed by an object due to its position or configuration?",
+        "answers": ["Kinetic energy", "Potential energy", "Thermal energy", "Nuclear energy"],
+        "correct": "Potential energy"
+    },
+    {
+        "questionId": "PV0000033",
+        "question": "What is the SI unit of electric field strength?",
+        "answers": ["Newton per coulomb", "Volt per meter", "Tesla", "Weber per meter"],
+        "correct": "Volt per meter"
+    },
+    {
+        "questionId": "PV0000034",
+        "question": "What is the term for the ratio of the speed of light in vacuum to the speed of light in a medium?",
+        "answers": ["Refraction", "Reflection", "Refractive index", "Diffraction"],
+        "correct": "Refractive index"
+    },
+    {
+        "questionId": "PV0000035",
+        "question": "What is the SI unit of radioactivity?",
+        "answers": ["Curie", "Becquerel", "Sievert", "Gray"],
+        "correct": "Becquerel"
+    },
+    {
+        "questionId": "PV0000036",
+        "question": "What is the term for the change in frequency of a wave for an observer moving relative to its source?",
+        "answers": ["Doppler effect", "Interference", "Diffraction", "Polarization"],
+        "correct": "Doppler effect"
+    },
+    {
+        "questionId": "PV0000037",
+        "question": "What is the SI unit of absorbed dose of ionizing radiation?",
+        "answers": ["Sievert", "Gray", "Becquerel", "Roentgen"],
+        "correct": "Gray"
+    },
+    {
+        "questionId": "PV0000038",
+        "question": "What is the term for the minimum frequency of electromagnetic radiation needed to eject electrons from a material?",
+        "answers": ["Resonance frequency", "Cutoff frequency", "Threshold frequency", "Natural frequency"],
+        "correct": "Threshold frequency"
+    },
+    {
+        "questionId": "PV0000039",
+        "question": "What is the SI unit of solid angle?",
+        "answers": ["Radian", "Degree", "Steradian", "Gradian"],
+        "correct": "Steradian"
+    },
+    {
+        "questionId": "PV0000040",
+        "question": "What is the term for the apparent force that acts on objects when viewed in a rotating reference frame?",
+        "answers": ["Centripetal force", "Coriolis force", "Gravitational force", "Frictional force"],
+        "correct": "Coriolis force"
+    },
+    {
+        "questionId": "PV0000041",
+        "question": "What is the SI unit of magnetic field strength?",
+        "answers": ["Tesla", "Ampere per meter", "Weber per meter", "Henry per meter"],
+        "correct": "Tesla"
+    },
+    {
+        "questionId": "PV0000042",
+        "question": "What is the term for the tendency of an object to remain at rest or in uniform motion?",
+        "answers": ["Momentum", "Inertia", "Acceleration", "Force"],
+        "correct": "Inertia"
+    },
+    {
+        "questionId": "PV0000043",
+        "question": "What is the SI unit of luminous flux?",
+        "answers": ["Lumen", "Candela", "Lux", "Watt"],
+        "correct": "Lumen"
+    },
+    {
+        "questionId": "PV0000044",
+        "question": "What is the term for the time taken by an oscillating system to complete one cycle?",
+        "answers": ["Frequency", "Amplitude", "Period", "Wavelength"],
+        "correct": "Period"
+    },
+    {
+        "questionId": "PV0000045",
+        "question": "What is the SI unit of electrical conductance?",
+        "answers": ["Ohm", "Mho", "Siemens", "Henry"],
+        "correct": "Siemens"
+    },
+    {
+        "questionId": "PV0000046",
+        "question": "What is the term for the ratio of the mass of a substance to the mass of an equal volume of water?",
+        "answers": ["Density", "Relative Density", "Weight", "Volume"],
+        "correct": "Relative Density"
+    },
+    {
+        "questionId": "PV0000047",
+        "question": "What is the SI unit of dose equivalent radiation?",
+        "answers": ["Gray", "Becquerel", "Sievert", "Roentgen"],
+        "correct": "Sievert"
+    },
+    {
+        "questionId": "PV0000048",
+        "question": "What is the term for the point at which a lever is supported?",
+        "answers": ["Fulcrum", "Pivot", "Axis", "Center"],
+        "correct": "Fulcrum"
+    },
+    {
+        "questionId": "PV0000049",
+        "question": "What is the SI unit of magnetic dipole moment?",
+        "answers": ["Weber", "Tesla meter", "Ampere square meter", "Henry meter"],
+        "correct": "Ampere square meter"
+    },
+    {
+        "questionId": "PV0000050",
+        "question": "What is the term for the spreading of waves around obstacles?",
+        "answers": ["Reflection", "Refraction", "Diffraction", "Interference"],
+        "correct": "Diffraction"
+    }
+]
