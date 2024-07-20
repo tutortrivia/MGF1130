@@ -256,7 +256,7 @@ function toggleVolume() {
 }
 
 function getTutoring() {
-    window.open('https://www.palmbeachstate.edu/slc/', '_blank');
+    window.open('https://palmbeachstate.smartcatalogiq.com/current/catalog/degrees-and-certificates/associate-in-science-as/ophthalmic-medical-technology-as/', '_blank');
 }
 
 
