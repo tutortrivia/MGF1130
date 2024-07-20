@@ -1,0 +1,376 @@
+[
+    {
+        "questionId": "OTP0001",
+        "question": "Complete this passage from Genesis 1:1: 'In the beginning God created...'",
+        "answers": [
+            "the heavens and the earth",
+            "man in his image",
+            "light and darkness",
+            "the animals of the field"
+        ],
+        "correct": "the heavens and the earth"
+    },
+    {
+        "questionId": "OTP0002",
+        "question": "In Exodus 20:3, what is the first of the Ten Commandments?",
+        "answers": [
+            "You must not make for yourself a carved image",
+            "You must not take up the name of Jehovah your God in a worthless way",
+            "You must not have any other gods besides me",
+            "Remember the Sabbath day to keep it sacred"
+        ],
+        "correct": "You must not have any other gods besides me"
+    },
+    {
+        "questionId": "OTP0003",
+        "question": "Complete this verse from Psalm 23:1: 'Jehovah is my Shepherd...'",
+        "answers": [
+            "I shall not want",
+            "He leads me beside still waters",
+            "He restores my soul",
+            "I will fear no evil"
+        ],
+        "correct": "I shall not want"
+    },
+    {
+        "questionId": "OTP0004",
+        "question": "In Proverbs 3:5, what are we instructed to trust in?",
+        "answers": [
+            "Our own understanding",
+            "The wisdom of elders",
+            "Jehovah with all our heart",
+            "The law of Moses"
+        ],
+        "correct": "Jehovah with all our heart"
+    },
+    {
+        "questionId": "OTP0005",
+        "question": "According to Isaiah 40:31, those hoping in Jehovah will do what?",
+        "answers": [
+            "Find peace and prosperity",
+            "Regain power and walk without tiring",
+            "Overcome all their enemies",
+            "Receive eternal life"
+        ],
+        "correct": "Regain power and walk without tiring"
+    },
+    {
+        "questionId": "OTP0006",
+        "question": "In Jeremiah 29:11, what does Jehovah declare he has towards his people?",
+        "answers": [
+            "Judgment and punishment",
+            "Thoughts of peace and a future",
+            "Trials and tribulations",
+            "Blessings and curses"
+        ],
+        "correct": "Thoughts of peace and a future"
+    },
+    {
+        "questionId": "OTP0007",
+        "question": "Complete this verse from Micah 6:8: 'What is Jehovah requiring of you? Only to...'",
+        "answers": [
+            "exercise justice, to cherish loyalty, and to walk in modesty with your God",
+            "offer sacrifices and burnt offerings",
+            "preach the good news to all nations",
+            "build a temple and worship daily"
+        ],
+        "correct": "exercise justice, to cherish loyalty, and to walk in modesty with your God"
+    },
+    {
+        "questionId": "OTP0008",
+        "question": "According to Malachi 3:10, what does Jehovah challenge his people to do?",
+        "answers": [
+            "Fast for 40 days and nights",
+            "Bring the entire tithe into the storehouse",
+            "Pray without ceasing",
+            "Love their enemies"
+        ],
+        "correct": "Bring the entire tithe into the storehouse"
+    },
+    {
+        "questionId": "OTP0009",
+        "question": "In Deuteronomy 6:5, what are we commanded to love Jehovah with?",
+        "answers": [
+            "Our heart and mind",
+            "Our soul and strength",
+            "Our heart, soul, and strength",
+            "Our heart and actions"
+        ],
+        "correct": "Our heart, soul, and strength"
+    },
+    {
+        "questionId": "OTP0010",
+        "question": "Complete this verse from Job 1:21: 'Jehovah has given, and Jehovah has...'",
+        "answers": [
+            "blessed",
+            "taken away",
+            "provided",
+            "created"
+        ],
+        "correct": "taken away"
+    },
+    {
+        "questionId": "OTP0011",
+        "question": "What scripture is the following passage: 'For I well know the thoughts that I am thinking toward you,'declares Jehovah,'thoughts of peace, and not of calamity, to give you a future and a hope.'",
+        "answers": [
+            "Isaiah 55:8",
+            "Jeremiah 29:11",
+            "Proverbs 16:9",
+            "Psalm 40:5"
+        ],
+        "correct": "Jeremiah 29:11"
+    },
+    {
+        "questionId": "OTP0012",
+        "question": "Complete this passage from Proverbs 3:5-6: 'Trust in Jehovah with all your heart, and do not rely on your own understanding. In all your ways take notice of him, and he will...'",
+        "answers": [
+            "bless you abundantly",
+            "make your paths straight",
+            "give you wisdom",
+            "protect you from harm"
+        ],
+        "correct": "make your paths straight"
+    },
+    {
+        "questionId": "OTP0013",
+        "question": "What scripture is the following passage: 'You will show me the path of life. In your presence is abundant joy; There is happiness at your right hand forever.'",
+        "answers": [
+            "Psalm 16:11",
+            "Proverbs 4:18",
+            "Isaiah 35:10",
+            "Ecclesiastes 2:26"
+        ],
+        "correct": "Psalm 16:11"
+    },
+    {
+        "questionId": "OTP0014",
+        "question": "Complete this verse from Isaiah 41:10: 'Do not be afraid, for I am with you. Do not be anxious, for I am your God. I will...'",
+        "answers": [
+            "guide you in all your ways",
+            "bless you and keep you",
+            "fortify you, yes, I will help you",
+            "give you rest and peace"
+        ],
+        "correct": "fortify you, yes, I will help you"
+    },
+    {
+        "questionId": "OTP0015",
+        "question": "What scripture is the following passage: 'Look! I am creating new heavens and a new earth; And the former things will not be called to mind, Nor will they come up into the heart.'",
+        "answers": [
+            "Revelation 21:1",
+            "Isaiah 65:17",
+            "2 Peter 3:13",
+            "Ezekiel 36:26"
+        ],
+        "correct": "Isaiah 65:17"
+    },
+    {
+        "questionId": "OTP0016",
+        "question": "Complete this passage from Psalm 37:4: 'Find exquisite delight in Jehovah, And he will...'",
+        "answers": [
+            "give you the desires of your heart",
+            "make your paths straight",
+            "bless you abundantly",
+            "protect you from all harm"
+        ],
+        "correct": "give you the desires of your heart"
+    },
+    {
+        "questionId": "OTP0017",
+        "question": "What scripture is the following passage: 'The fear of Jehovah is the beginning of wisdom, And knowledge of the Most Holy One is understanding.'",
+        "answers": [
+            "Proverbs 1:7",
+            "Proverbs 9:10",
+            "Psalm 111:10",
+            "Job 28:28"
+        ],
+        "correct": "Proverbs 9:10"
+    },
+    {
+        "questionId": "OTP0018",
+        "question": "Complete this verse from Exodus 34:6: 'Jehovah, Jehovah, a God merciful and compassionate, slow to anger and abundant in...'",
+        "answers": [
+            "love and faithfulness",
+            "power and might",
+            "wisdom and knowledge",
+            "justice and righteousness"
+        ],
+        "correct": "love and faithfulness"
+    },
+    {
+        "questionId": "OTP0019",
+        "question": "What scripture is the following passage: 'Let your eyes look straight ahead, And fix your gaze straight before you.'",
+        "answers": [
+            "Proverbs 4:25",
+            "Psalm 119:37",
+            "Ecclesiastes 2:14",
+            "Isaiah 30:21"
+        ],
+        "correct": "Proverbs 4:25"
+    },
+    {
+        "questionId": "OTP0020",
+        "question": "Complete this verse from Psalm 34:8: 'Taste and see that Jehovah is...'",
+        "answers": [
+            "merciful",
+            "good",
+            "powerful",
+            "just"
+        ],
+        "correct": "good"
+    },
+    {
+        "questionId": "OTP0021",
+        "question": "What scripture is the following passage: 'For I am confident of this very thing, that the one who started a good work in you will bring it to completion until the day of Christ Jesus.'",
+        "answers": [
+            "Ephesians 2:10",
+            "Philippians 1:6",
+            "Colossians 1:10",
+            "2 Thessalonians 1:11"
+        ],
+        "correct": "Philippians 1:6"
+    },
+    {
+        "questionId": "OTP0022",
+        "question": "Complete this verse from Proverbs 17:17: 'A true friend shows love at all times and...'",
+        "answers": [
+            "is born to help in times of distress",
+            "sticks closer than a brother",
+            "gives wise counsel",
+            "shares in your joys and sorrows"
+        ],
+        "correct": "is born to help in times of distress"
+    },
+    {
+        "questionId": "OTP0023",
+        "question": "What scripture is the following passage: 'For his anger lasts only a moment, But his favor is for a lifetime. Weeping may come in the evening, but in the morning there is a joyful cry.'",
+        "answers": [
+            "Psalm 30:5",
+            "Lamentations 3:22-23",
+            "Isaiah 54:7-8",
+            "Job 33:26"
+        ],
+        "correct": "Psalm 30:5"
+    },
+    {
+        "questionId": "OTP0024",
+        "question": "Complete this verse from Isaiah 40:31: 'But those hoping in Jehovah will regain power. They will...'",
+        "answers": [
+            "soar on wings like eagles",
+            "walk and not grow weary",
+            "run and not get tired",
+            "All of the above"
+        ],
+        "correct": "All of the above"
+    },
+    {
+        "questionId": "OTP0025",
+        "question": "What scripture is the following passage: 'In the beginning God created the heavens and the earth.'",
+        "answers": [
+            "Genesis 1:1",
+            "John 1:1",
+            "Exodus 20:11",
+            "Colossians 1:16"
+        ],
+        "correct": "Genesis 1:1"
+    },
+    {
+        "questionId": "OTP0026",
+        "question": "Complete this verse from Proverbs 18:24: 'There are companions ready to crush one another, but there is a friend who...'",
+        "answers": [
+            "sticks closer than a brother",
+            "speaks the truth in love",
+            "gives wise counsel",
+            "shares in your joys and sorrows"
+        ],
+        "correct": "sticks closer than a brother"
+    },
+    {
+        "questionId": "OTP0027",
+        "question": "What scripture is the following passage: 'Trust in Jehovah with all your heart, And do not rely on your own understanding.'",
+        "answers": [
+            "Proverbs 3:5",
+            "Psalm 37:3",
+            "Isaiah 26:4",
+            "Jeremiah 17:7"
+        ],
+        "correct": "Proverbs 3:5"
+    },
+    {
+        "questionId": "OTP0028",
+        "question": "Complete this verse from Psalm 46:1: 'God is our refuge and strength...'",
+        "answers": [
+            "A help that is readily found in times of distress",
+            "Our shield and protector",
+            "The rock of our salvation",
+            "The source of all wisdom"
+        ],
+        "correct": "A help that is readily found in times of distress"
+    },
+    {
+        "questionId": "OTP0029",
+        "question": "What scripture is the following passage: 'But as for me and my household, we will serve Jehovah.'",
+        "answers": [
+            "Joshua 24:15",
+            "Deuteronomy 6:5",
+            "1 Samuel 12:24",
+            "Psalm 100:2"
+        ],
+        "correct": "Joshua 24:15"
+    },
+    {
+        "questionId": "OTP0030",
+        "question": "Complete this verse from Proverbs 15:1: 'A mild answer turns away...'",
+        "answers": [
+            "rage",
+            "sorrow",
+            "fear",
+            "doubt"
+        ],
+        "correct": "rage"
+    },
+    {
+        "questionId": "OTP0031",
+        "question": "What scripture is the following passage: 'Even though I walk through the valley of deep shadow, I fear no harm, For you are with me; Your rod and your staff reassure me.'",
+        "answers": [
+            "Psalm 23:4",
+            "Isaiah 41:10",
+            "Deuteronomy 31:6",
+            "Joshua 1:9"
+        ],
+        "correct": "Psalm 23:4"
+    },
+    {
+        "questionId": "OTP0032",
+        "question": "Complete this verse from Ecclesiastes 3:1: 'There is an appointed time for everything, A time for every activity...'",
+        "answers": [
+            "under the heavens",
+            "of man",
+            "in life",
+            "on earth"
+        ],
+        "correct": "under the heavens"
+    },
+    {
+        "questionId": "OTP0033",
+        "question": "What scripture is the following passage: 'Your word is a lamp to my foot, And a light for my path.'",
+        "answers": [
+            "Psalm 119:105",
+            "Proverbs 6:23",
+            "2 Peter 1:19",
+            "Isaiah 30:21"
+        ],
+        "correct": "Psalm 119:105"
+    },
+    {
+        "questionId": "OTP0034",
+        "question": "Complete this verse from Proverbs 16:9: 'A man's heart may plan his way, but...'",
+        "answers": [
+            "Jehovah directs his steps",
+            "God determines his success",
+            "the future remains uncertain",
+            "wisdom guides his path"
+        ],
+        "correct": "Jehovah directs his steps"
+    }
+]
