@@ -1,9 +1,9 @@
 const allQuestions = {
-    grammar: null,
-    trigFunctions: null,
-    periodicTable: null,
-    physicsVocabulary: null,
-    numberSets: null
+    Diagnostics: null,
+    EyeAnatomy: null,
+    EyeDiseasesAndDisorders: null,
+    OpticsAndRefraction: null,
+    Pharmacology: null
 };
 
 async function loadQuestionLibrary(libraryName) {
