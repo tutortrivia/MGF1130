@@ -259,9 +259,9 @@
             "soar on wings like eagles",
             "walk and not grow weary",
             "run and not get tired",
-            "All of the above"
+            "All of these"
         ],
-        "correct": "All of the above"
+        "correct": "All of these"
     },
     {
         "questionId": "OTP0025",
