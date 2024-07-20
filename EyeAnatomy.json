@@ -280,5 +280,23 @@
         "question": "Which of the following is NOT a part of the fibrous tunic of the eye?",
         "answers": ["Cornea", "Sclera", "Choroid", "Limbus"],
         "correct": "Choroid"
+    },
+    {
+        "questionId": "AE0000048",
+        "question": "What is the name of the fluid-filled space between the lens and the iris?",
+        "answers": ["Anterior chamber", "Posterior chamber", "Vitreous chamber", "Schlemm's canal"],
+        "correct": "Posterior chamber"
+    },
+    {
+        "questionId": "AE0000049",
+        "question": "Which of the following is responsible for maintaining intraocular pressure?",
+        "answers": ["Aqueous humor", "Vitreous humor", "Tears", "Cerebrospinal fluid"],
+        "correct": "Aqueous humor"
+    },
+    {
+        "questionId": "AE0000050",
+        "question": "What is the name of the suspensory ligaments that hold the lens in place?",
+        "answers": ["Zonules of Zinn", "Müller's muscle", "Tenon's capsule", "Bowman's membrane"],
+        "correct": "Zonules of Zinn"
     }
 ]
