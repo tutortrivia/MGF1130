@@ -1,9 +1,8 @@
 const allQuestions = {
-    Diagnostics: null,
-    EyeAnatomy: null,
-    EyeDiseasesAndDisorders: null,
-    OpticsAndRefraction: null,
-    Pharmacology: null
+    NewTestamentQuotes: null,
+    OldTestamentQuotes: null,
+    NewTestamentStories: null,
+    OldTestamentStories: null
 };
 
 async function loadQuestionLibrary(libraryName) {
