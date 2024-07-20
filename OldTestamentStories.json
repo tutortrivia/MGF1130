@@ -1,0 +1,332 @@
+[
+    {
+        "questionId": "OTS0001",
+        "question": "Who built an ark to save his family and the animals from a great flood?",
+        "answers": [
+            "Moses",
+            "Noah",
+            "Abraham",
+            "Lot"
+        ],
+        "correct": "Noah"
+    },
+    {
+        "questionId": "OTS0002",
+        "question": "Which prophet was swallowed by a big fish for three days and three nights?",
+        "answers": [
+            "Elijah",
+            "Jonah",
+            "Daniel",
+            "Ezekiel"
+        ],
+        "correct": "Jonah"
+    },
+    {
+        "questionId": "OTS0003",
+        "question": "Who led the Israelites out of Egypt and received the Ten Commandments from God?",
+        "answers": [
+            "Joshua",
+            "Aaron",
+            "Moses",
+            "Samuel"
+        ],
+        "correct": "Moses"
+    },
+    {
+        "questionId": "OTS0004",
+        "question": "Which young shepherd defeated the Philistine giant Goliath?",
+        "answers": [
+            "Saul",
+            "Jonathan",
+            "Solomon",
+            "David"
+        ],
+        "correct": "David"
+    },
+    {
+        "questionId": "OTS0005",
+        "question": "Who was sold into slavery by his brothers and later became a ruler in Egypt?",
+        "answers": [
+            "Benjamin",
+            "Joseph",
+            "Reuben",
+            "Judah"
+        ],
+        "correct": "Joseph"
+    },
+    {
+        "questionId": "OTS0006",
+        "question": "Which prophet challenged the prophets of Baal on Mount Carmel?",
+        "answers": [
+            "Elisha",
+            "Elijah",
+            "Isaiah",
+            "Jeremiah"
+        ],
+        "correct": "Elijah"
+    },
+    {
+        "questionId": "OTS0007",
+        "question": "Who was the first king of Israel?",
+        "answers": [
+            "David",
+            "Saul",
+            "Samuel",
+            "Solomon"
+        ],
+        "correct": "Saul"
+    },
+    {
+        "questionId": "OTS0008",
+        "question": "Which judge defeated the Midianites with only 300 men?",
+        "answers": [
+            "Samson",
+            "Gideon",
+            "Jephthah",
+            "Ehud"
+        ],
+        "correct": "Gideon"
+    },
+    {
+        "questionId": "OTS0009",
+        "question": "Who was known for his great strength and long hair?",
+        "answers": [
+            "Samson",
+            "Absalom",
+            "Boaz",
+            "Gideon"
+        ],
+        "correct": "Samson"
+    },
+    {
+        "questionId": "OTS0010",
+        "question": "Which prophet was taken up to heaven in a whirlwind?",
+        "answers": [
+            "Elisha",
+            "Elijah",
+            "Isaiah",
+            "Ezekiel"
+        ],
+        "correct": "Elijah"
+    },
+    {
+        "questionId": "OTS0011",
+        "question": "Who was the wise king who built the first temple in Jerusalem?",
+        "answers": [
+            "David",
+            "Solomon",
+            "Rehoboam",
+            "Hezekiah"
+        ],
+        "correct": "Solomon"
+    },
+    {
+        "questionId": "OTS0012",
+        "question": "Which prophet spent the night in a den of lions?",
+        "answers": [
+            "Daniel",
+            "Ezekiel",
+            "Jeremiah",
+            "Isaiah"
+        ],
+        "correct": "Daniel"
+    },
+    {
+        "questionId": "OTS0013",
+        "question": "Who was the first woman created by God?",
+        "answers": [
+            "Sarah",
+            "Eve",
+            "Rachel",
+            "Leah"
+        ],
+        "correct": "Eve"
+    },
+    {
+        "questionId": "OTS0014",
+        "question": "Which prophet saw a vision of a valley of dry bones coming to life?",
+        "answers": [
+            "Ezekiel",
+            "Isaiah",
+            "Jeremiah",
+            "Hosea"
+        ],
+        "correct": "Ezekiel"
+    },
+    {
+        "questionId": "OTS0015",
+        "question": "Who was chosen to replace Saul as king of Israel?",
+        "answers": [
+            "Solomon",
+            "Jonathan",
+            "Samuel",
+            "David"
+        ],
+        "correct": "David"
+    },
+    {
+        "questionId": "OTS0016",
+        "question": "Which prophet confronted King Ahab about his worship of Baal?",
+        "answers": [
+            "Elisha",
+            "Elijah",
+            "Nathan",
+            "Micaiah"
+        ],
+        "correct": "Elijah"
+    },
+    {
+        "questionId": "OTS0017",
+        "question": "Who was the father of Isaac?",
+        "answers": [
+            "Jacob",
+            "Abraham",
+            "Ishmael",
+            "Lot"
+        ],
+        "correct": "Abraham"
+    },
+    {
+        "questionId": "OTS0018",
+        "question": "Which judge made a rash vow that led to the sacrifice of his daughter?",
+        "answers": [
+            "Gideon",
+            "Samson",
+            "Jephthah",
+            "Barak"
+        ],
+        "correct": "Jephthah"
+    },
+    {
+        "questionId": "OTS0019",
+        "question": "Who was the queen who risked her life to save the Jewish people from Haman's plot?",
+        "answers": [
+            "Ruth",
+            "Esther",
+            "Deborah",
+            "Abigail"
+        ],
+        "correct": "Esther"
+    },
+    {
+        "questionId": "OTS0020",
+        "question": "Which prophet was instructed by God to marry a prostitute?",
+        "answers": [
+            "Hosea",
+            "Amos",
+            "Joel",
+            "Micah"
+        ],
+        "correct": "Hosea"
+    },
+    {
+        "questionId": "OTS0021",
+        "question": "Who was known as 'a man of integrity' and suffered many trials?",
+        "answers": [
+            "Noah",
+            "Job",
+            "Daniel",
+            "Joseph"
+        ],
+        "correct": "Job"
+    },
+    {
+        "questionId": "OTS0022",
+        "question": "Which prophet anointed Saul and later David as kings of Israel?",
+        "answers": [
+            "Nathan",
+            "Elijah",
+            "Samuel",
+            "Gad"
+        ],
+        "correct": "Samuel"
+    },
+    {
+        "questionId": "OTS0023",
+        "question": "Who led the Israelites in conquering Canaan after Moses' death?",
+        "answers": [
+            "Caleb",
+            "Joshua",
+            "Aaron",
+            "Eleazar"
+        ],
+        "correct": "Joshua"
+    },
+    {
+        "questionId": "OTS0024",
+        "question": "Which woman became the ancestor of Jesus Christ after gleaning in Boaz's field?",
+        "answers": [
+            "Ruth",
+            "Naomi",
+            "Orpah",
+            "Rahab"
+        ],
+        "correct": "Ruth"
+    },
+    {
+        "questionId": "OTS0025",
+        "question": "Who was the mother of Samuel, known for her earnest prayer for a child?",
+        "answers": [
+            "Hannah",
+            "Rachel",
+            "Sarah",
+            "Rebekah"
+        ],
+        "correct": "Hannah"
+    },
+    {
+        "questionId": "OTS0026",
+        "question": "Which king of Judah destroyed the copper serpent Moses had made because it was being worshipped?",
+        "answers": [
+            "Josiah",
+            "Hezekiah",
+            "Asa",
+            "Jehoshaphat"
+        ],
+        "correct": "Hezekiah"
+    },
+    {
+        "questionId": "OTS0027",
+        "question": "Who was the prophet that confronted King David about his sin with Bathsheba?",
+        "answers": [
+            "Nathan",
+            "Gad",
+            "Samuel",
+            "Elijah"
+        ],
+        "correct": "Nathan"
+    },
+    {
+        "questionId": "OTS0028",
+        "question": "Which of Job's friends was not rebuked by God for speaking falsely?",
+        "answers": [
+            "Eliphaz",
+            "Bildad",
+            "Zophar",
+            "Elihu"
+        ],
+        "correct": "Elihu"
+    },
+    {
+        "questionId": "OTS0029",
+        "question": "Who was the prophet that saw the 'scroll flying' and the 'woman in a basket' visions?",
+        "answers": [
+            "Zechariah",
+            "Haggai",
+            "Malachi",
+            "Zephaniah"
+        ],
+        "correct": "Zechariah"
+    },
+    {
+        "questionId": "OTS0030",
+        "question": "Which king of Persia allowed the Jews to return to Jerusalem and rebuild the temple?",
+        "answers": [
+            "Cyrus",
+            "Darius",
+            "Artaxerxes",
+            "Ahasuerus"
+        ],
+        "correct": "Cyrus"
+    }
+]
