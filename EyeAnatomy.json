@@ -1,0 +1,284 @@
+[
+    {
+        "questionId": "AE0000001",
+        "question": "Which layer of the eye contains the photoreceptors?",
+        "answers": ["Sclera", "Choroid", "Retina", "Cornea"],
+        "correct": "Retina"
+    },
+    {
+        "questionId": "AE0000002",
+        "question": "What is the transparent front part of the eye called?",
+        "answers": ["Lens", "Cornea", "Iris", "Pupil"],
+        "correct": "Cornea"
+    },
+    {
+        "questionId": "AE0000003",
+        "question": "Which structure controls the amount of light entering the eye?",
+        "answers": ["Cornea", "Lens", "Iris", "Retina"],
+        "correct": "Iris"
+    },
+    {
+        "questionId": "AE0000004",
+        "question": "What is the name of the jelly-like substance that fills the eyeball?",
+        "answers": ["Aqueous humor", "Vitreous humor", "Cerebrospinal fluid", "Synovial fluid"],
+        "correct": "Vitreous humor"
+    },
+    {
+        "questionId": "AE0000005",
+        "question": "Which part of the eye changes shape to focus light on the retina?",
+        "answers": ["Cornea", "Iris", "Lens", "Pupil"],
+        "correct": "Lens"
+    },
+    {
+        "questionId": "AE0000006",
+        "question": "What is the name of the small central area of the retina responsible for sharp, detailed vision?",
+        "answers": ["Optic disc", "Fovea", "Macula", "Ora serrata"],
+        "correct": "Fovea"
+    },
+    {
+        "questionId": "AE0000007",
+        "question": "Which of the following is NOT one of the three layers of the eye?",
+        "answers": ["Sclera", "Choroid", "Retina", "Conjunctiva"],
+        "correct": "Conjunctiva"
+    },
+    {
+        "questionId": "AE0000008",
+        "question": "What is the name of the clear fluid that fills the anterior chamber of the eye?",
+        "answers": ["Vitreous humor", "Aqueous humor", "Cerebrospinal fluid", "Tears"],
+        "correct": "Aqueous humor"
+    },
+    {
+        "questionId": "AE0000009",
+        "question": "Which structure is responsible for producing aqueous humor?",
+        "answers": ["Iris", "Ciliary body", "Lens", "Cornea"],
+        "correct": "Ciliary body"
+    },
+    {
+        "questionId": "AE0000010",
+        "question": "What is the name of the pigmented layer of the eye between the sclera and retina?",
+        "answers": ["Choroid", "Iris", "Conjunctiva", "Episclera"],
+        "correct": "Choroid"
+    },
+    {
+        "questionId": "AE0000011",
+        "question": "Which of the following is NOT one of the six extraocular muscles?",
+        "answers": ["Lateral rectus", "Medial rectus", "Superior oblique", "Inferior transverse"],
+        "correct": "Inferior transverse"
+    },
+    {
+        "questionId": "AE0000012",
+        "question": "What is the name of the transparent membrane covering the front of the eye and inner eyelids?",
+        "answers": ["Sclera", "Cornea", "Conjunctiva", "Choroid"],
+        "correct": "Conjunctiva"
+    },
+    {
+        "questionId": "AE0000013",
+        "question": "Which cranial nerve controls most of the extraocular muscles?",
+        "answers": ["Optic nerve (CN II)", "Oculomotor nerve (CN III)", "Trochlear nerve (CN IV)", "Abducens nerve (CN VI)"],
+        "correct": "Oculomotor nerve (CN III)"
+    },
+    {
+        "questionId": "AE0000014",
+        "question": "What is the name of the opening in the center of the iris?",
+        "answers": ["Fovea", "Macula", "Pupil", "Optic disc"],
+        "correct": "Pupil"
+    },
+    {
+        "questionId": "AE0000015",
+        "question": "Which layer of the retina contains the photoreceptor cells?",
+        "answers": ["Ganglion cell layer", "Inner nuclear layer", "Outer nuclear layer", "Pigment epithelium"],
+        "correct": "Outer nuclear layer"
+    },
+    {
+        "questionId": "AE0000016",
+        "question": "What is the name of the point where the optic nerve leaves the eye?",
+        "answers": ["Fovea", "Macula", "Optic disc", "Ora serrata"],
+        "correct": "Optic disc"
+    },
+    {
+        "questionId": "AE0000017",
+        "question": "Which of the following is NOT a type of photoreceptor cell in the retina?",
+        "answers": ["Rods", "Cones", "Bipolar cells", "Ganglion cells"],
+        "correct": "Ganglion cells"
+    },
+    {
+        "questionId": "AE0000018",
+        "question": "What is the name of the muscle that controls the shape of the lens?",
+        "answers": ["Sphincter pupillae", "Dilator pupillae", "Ciliary muscle", "Orbicularis oculi"],
+        "correct": "Ciliary muscle"
+    },
+    {
+        "questionId": "AE0000019",
+        "question": "Which part of the eye contains melanin pigment that gives eyes their color?",
+        "answers": ["Cornea", "Lens", "Iris", "Sclera"],
+        "correct": "Iris"
+    },
+    {
+        "questionId": "AE0000020",
+        "question": "What is the name of the clear, dome-shaped structure that covers the iris and pupil?",
+        "answers": ["Lens", "Cornea", "Sclera", "Vitreous"],
+        "correct": "Cornea"
+    },
+    {
+        "questionId": "AE0000021",
+        "question": "Which of the following is NOT a layer of the cornea?",
+        "answers": ["Epithelium", "Bowman's layer", "Stroma", "Ciliary body"],
+        "correct": "Ciliary body"
+    },
+    {
+        "questionId": "AE0000022",
+        "question": "What is the name of the thin, protective membrane that covers the sclera?",
+        "answers": ["Choroid", "Conjunctiva", "Episclera", "Tenon's capsule"],
+        "correct": "Episclera"
+    },
+    {
+        "questionId": "AE0000023",
+        "question": "Which structure is responsible for draining aqueous humor from the eye?",
+        "answers": ["Schlemm's canal", "Ciliary body", "Iris", "Lens"],
+        "correct": "Schlemm's canal"
+    },
+    {
+        "questionId": "AE0000024",
+        "question": "What is the name of the space between the iris and cornea?",
+        "answers": ["Posterior chamber", "Anterior chamber", "Vitreous chamber", "Schlemm's canal"],
+        "correct": "Anterior chamber"
+    },
+    {
+        "questionId": "AE0000025",
+        "question": "Which of the following is NOT a part of the lacrimal apparatus?",
+        "answers": ["Lacrimal gland", "Lacrimal sac", "Nasolacrimal duct", "Ciliary body"],
+        "correct": "Ciliary body"
+    },
+    {
+        "questionId": "AE0000026",
+        "question": "What is the name of the muscle that opens the eyelid?",
+        "answers": ["Orbicularis oculi", "Levator palpebrae superioris", "Müller's muscle", "Ciliary muscle"],
+        "correct": "Levator palpebrae superioris"
+    },
+    {
+        "questionId": "AE0000027",
+        "question": "Which of the following is NOT a type of cone photoreceptor?",
+        "answers": ["Red cones", "Green cones", "Blue cones", "Yellow cones"],
+        "correct": "Yellow cones"
+    },
+    {
+        "questionId": "AE0000028",
+        "question": "What is the name of the ring-shaped muscle in the iris that constricts the pupil?",
+        "answers": ["Dilator pupillae", "Sphincter pupillae", "Ciliary muscle", "Orbicularis oculi"],
+        "correct": "Sphincter pupillae"
+    },
+    {
+        "questionId": "AE0000029",
+        "question": "Which part of the eye contains the ciliary muscles?",
+        "answers": ["Iris", "Lens", "Ciliary body", "Cornea"],
+        "correct": "Ciliary body"
+    },
+    {
+        "questionId": "AE0000030",
+        "question": "What is the name of the membrane that separates the retina from the choroid?",
+        "answers": ["Bruch's membrane", "Descemet's membrane", "Bowman's membrane", "Internal limiting membrane"],
+        "correct": "Bruch's membrane"
+    },
+    {
+        "questionId": "AE0000031",
+        "question": "Which of the following is NOT a function of the choroid?",
+        "answers": ["Providing oxygen to the retina", "Absorbing light", "Focusing light on the retina", "Regulating eye temperature"],
+        "correct": "Focusing light on the retina"
+    },
+    {
+        "questionId": "AE0000032",
+        "question": "What is the name of the space between the lens and the retina?",
+        "answers": ["Anterior chamber", "Posterior chamber", "Vitreous chamber", "Schlemm's canal"],
+        "correct": "Vitreous chamber"
+    },
+    {
+        "questionId": "AE0000033",
+        "question": "Which cranial nerve is responsible for sensation in the cornea?",
+        "answers": ["Optic nerve (CN II)", "Oculomotor nerve (CN III)", "Trigeminal nerve (CN V)", "Facial nerve (CN VII)"],
+        "correct": "Trigeminal nerve (CN V)"
+    },
+    {
+        "questionId": "AE0000034",
+        "question": "What is the name of the pigmented layer of cells at the back of the retina?",
+        "answers": ["Ganglion cell layer", "Inner nuclear layer", "Outer nuclear layer", "Retinal pigment epithelium"],
+        "correct": "Retinal pigment epithelium"
+    },
+    {
+        "questionId": "AE0000035",
+        "question": "Which of the following structures is NOT found in the anterior segment of the eye?",
+        "answers": ["Cornea", "Iris", "Lens", "Retina"],
+        "correct": "Retina"
+    },
+    {
+        "questionId": "AE0000036",
+        "question": "What is the name of the muscle that closes the eyelid?",
+        "answers": ["Levator palpebrae superioris", "Orbicularis oculi", "Müller's muscle", "Ciliary muscle"],
+        "correct": "Orbicularis oculi"
+    },
+    {
+        "questionId": "AE0000037",
+        "question": "Which of the following is NOT a function of the sclera?",
+        "answers": ["Protecting the inner structures of the eye", "Maintaining the eye's shape", "Providing attachment for extraocular muscles", "Producing aqueous humor"],
+        "correct": "Producing aqueous humor"
+    },
+    {
+        "questionId": "AE0000038",
+        "question": "What is the name of the clear capsule that surrounds the lens?",
+        "answers": ["Vitreous membrane", "Lens capsule", "Descemet's membrane", "Internal limiting membrane"],
+        "correct": "Lens capsule"
+    },
+    {
+        "questionId": "AE0000039",
+        "question": "Which of the following is NOT a part of the uveal tract?",
+        "answers": ["Iris", "Ciliary body", "Choroid", "Sclera"],
+        "correct": "Sclera"
+    },
+    {
+        "questionId": "AE0000040",
+        "question": "What is the name of the junction between the cornea and the sclera?",
+        "answers": ["Ora serrata", "Limbus", "Schlemm's canal", "Trabecular meshwork"],
+        "correct": "Limbus"
+    },
+    {
+        "questionId": "AE0000041",
+        "question": "Which of the following muscles is responsible for eye abduction?",
+        "answers": ["Medial rectus", "Lateral rectus", "Superior rectus", "Inferior rectus"],
+        "correct": "Lateral rectus"
+    },
+    {
+        "questionId": "AE0000042",
+        "question": "What is the name of the transparent gel between the lens and the retina?",
+        "answers": ["Aqueous humor", "Vitreous humor", "Cerebrospinal fluid", "Synovial fluid"],
+        "correct": "Vitreous humor"
+    },
+    {
+        "questionId": "AE0000043",
+        "question": "Which of the following is NOT a layer of the tear film?",
+        "answers": ["Lipid layer", "Aqueous layer", "Mucin layer", "Epithelial layer"],
+        "correct": "Epithelial layer"
+    },
+    {
+        "questionId": "AE0000044",
+        "question": "What is the name of the ring of tissue that surrounds the optic nerve at its exit from the eye?",
+        "answers": ["Lamina cribrosa", "Ora serrata", "Schlemm's canal", "Zonules of Zinn"],
+        "correct": "Lamina cribrosa"
+    },
+    {
+        "questionId": "AE0000045",
+        "question": "Which of the following structures is responsible for producing tears?",
+        "answers": ["Meibomian glands", "Lacrimal glands", "Ciliary body", "Conjunctiva"],
+        "correct": "Lacrimal glands"
+    },
+    {
+        "questionId": "AE0000046",
+        "question": "What is the name of the small muscular fold in the inner corner of the eye?",
+        "answers": ["Plica semilunaris", "Caruncle", "Punctum", "Canaliculus"],
+        "correct": "Plica semilunaris"
+    },
+    {
+        "questionId": "AE0000047",
+        "question": "Which of the following is NOT a part of the fibrous tunic of the eye?",
+        "answers": ["Cornea", "Sclera", "Choroid", "Limbus"],
+        "correct": "Choroid"
+    }
+]
