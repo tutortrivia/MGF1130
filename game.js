@@ -27,7 +27,7 @@ let sessionBest = {
     incorrect: 0,
     percentage: 0
 };
-let currentLibrary = 'Pharmacology';
+let currentLibrary = 'OldTestamentQuotes';
 let currentQuestions = [];
 
 function getAvailableLibraries() {
