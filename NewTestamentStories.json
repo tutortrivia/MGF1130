@@ -1,0 +1,332 @@
+[
+    {
+        "questionId": "NTS0001",
+        "question": "Who was Jesus' mother?",
+        "answers": [
+            "Mary",
+            "Elizabeth",
+            "Anna",
+            "Martha"
+        ],
+        "correct": "Mary"
+    },
+    {
+        "questionId": "NTS0002",
+        "question": "Which disciple denied Jesus three times before the rooster crowed?",
+        "answers": [
+            "John",
+            "Peter",
+            "James",
+            "Andrew"
+        ],
+        "correct": "Peter"
+    },
+    {
+        "questionId": "NTS0003",
+        "question": "Who baptized Jesus in the Jordan River?",
+        "answers": [
+            "John the Baptist",
+            "Peter",
+            "Elijah",
+            "Andrew"
+        ],
+        "correct": "John the Baptist"
+    },
+    {
+        "questionId": "NTS0004",
+        "question": "Which apostle was a tax collector before following Jesus?",
+        "answers": [
+            "Matthew",
+            "Mark",
+            "Luke",
+            "John"
+        ],
+        "correct": "Matthew"
+    },
+    {
+        "questionId": "NTS0005",
+        "question": "Who was the first martyr of the Christian congregation?",
+        "answers": [
+            "Stephen",
+            "James",
+            "Peter",
+            "Paul"
+        ],
+        "correct": "Stephen"
+    },
+    {
+        "questionId": "NTS0006",
+        "question": "Which Roman official tried Jesus and found no fault in him?",
+        "answers": [
+            "Herod",
+            "Pilate",
+            "Caesar",
+            "Felix"
+        ],
+        "correct": "Pilate"
+    },
+    {
+        "questionId": "NTS0007",
+        "question": "Who was struck blind on the road to Damascus and later became an apostle?",
+        "answers": [
+            "Barnabas",
+            "Silas",
+            "Paul",
+            "Timothy"
+        ],
+        "correct": "Paul"
+    },
+    {
+        "questionId": "NTS0008",
+        "question": "Which disciple did Jesus call 'the rock'?",
+        "answers": [
+            "John",
+            "James",
+            "Peter",
+            "Andrew"
+        ],
+        "correct": "Peter"
+    },
+    {
+        "questionId": "NTS0009",
+        "question": "Who was the rich man that climbed a sycamore tree to see Jesus?",
+        "answers": [
+            "Nicodemus",
+            "Zacchaeus",
+            "Joseph of Arimathea",
+            "Lazarus"
+        ],
+        "correct": "Zacchaeus"
+    },
+    {
+        "questionId": "NTS0010",
+        "question": "Which apostle was called 'the disciple whom Jesus loved'?",
+        "answers": [
+            "Peter",
+            "James",
+            "John",
+            "Andrew"
+        ],
+        "correct": "John"
+    },
+    {
+        "questionId": "NTS0011",
+        "question": "Who was the first person to see the resurrected Jesus?",
+        "answers": [
+            "Mary Magdalene",
+            "Peter",
+            "John",
+            "Thomas"
+        ],
+        "correct": "Mary Magdalene"
+    },
+    {
+        "questionId": "NTS0012",
+        "question": "Which disciple doubted Jesus' resurrection until he saw him?",
+        "answers": [
+            "Peter",
+            "James",
+            "Thomas",
+            "Bartholomew"
+        ],
+        "correct": "Thomas"
+    },
+    {
+        "questionId": "NTS0013",
+        "question": "Who was the high priest who questioned Jesus during his trial?",
+        "answers": [
+            "Annas",
+            "Caiaphas",
+            "Gamaliel",
+            "Nicodemus"
+        ],
+        "correct": "Caiaphas"
+    },
+    {
+        "questionId": "NTS0014",
+        "question": "Which couple lied about the price of land they sold and died as a result?",
+        "answers": [
+            "Aquila and Priscilla",
+            "Ananias and Sapphira",
+            "Zechariah and Elizabeth",
+            "Joseph and Mary"
+        ],
+        "correct": "Ananias and Sapphira"
+    },
+    {
+        "questionId": "NTS0015",
+        "question": "Who was the Ethiopian official baptized by Philip?",
+        "answers": [
+            "Simon the Sorcerer",
+            "The Ethiopian eunuch",
+            "Cornelius",
+            "Lydia"
+        ],
+        "correct": "The Ethiopian eunuch"
+    },
+    {
+        "questionId": "NTS0016",
+        "question": "Which apostle was beheaded by King Herod Agrippa I?",
+        "answers": [
+            "Peter",
+            "John",
+            "James",
+            "Andrew"
+        ],
+        "correct": "James"
+    },
+    {
+        "questionId": "NTS0017",
+        "question": "Who accompanied Paul on his second missionary journey?",
+        "answers": [
+            "Barnabas",
+            "Mark",
+            "Silas",
+            "Timothy"
+        ],
+        "correct": "Silas"
+    },
+    {
+        "questionId": "NTS0018",
+        "question": "Which city was Paul from?",
+        "answers": [
+            "Jerusalem",
+            "Tarsus",
+            "Rome",
+            "Antioch"
+        ],
+        "correct": "Tarsus"
+    },
+    {
+        "questionId": "NTS0019",
+        "question": "Who was the first Gentile convert to Christianity?",
+        "answers": [
+            "Cornelius",
+            "Lydia",
+            "Timothy",
+            "Titus"
+        ],
+        "correct": "Cornelius"
+    },
+    {
+        "questionId": "NTS0020",
+        "question": "Which young man fell asleep during Paul's long speech and fell from a window?",
+        "answers": [
+            "Timothy",
+            "Titus",
+            "Eutychus",
+            "Mark"
+        ],
+        "correct": "Eutychus"
+    },
+    {
+        "questionId": "NTS0021",
+        "question": "Who was the silversmith who incited a riot against Paul in Ephesus?",
+        "answers": [
+            "Demetrius",
+            "Alexander",
+            "Gaius",
+            "Aristarchus"
+        ],
+        "correct": "Demetrius"
+    },
+    {
+        "questionId": "NTS0022",
+        "question": "Which Roman governor heard Paul's defense and said, 'You are out of your mind, Paul! Your great learning is driving you insane.'?",
+        "answers": [
+            "Felix",
+            "Festus",
+            "Gallio",
+            "Agrippa"
+        ],
+        "correct": "Festus"
+    },
+    {
+        "questionId": "NTS0023",
+        "question": "Who was the proconsul of Cyprus who became a believer after Paul struck a sorcerer with temporary blindness?",
+        "answers": [
+            "Sergius Paulus",
+            "Gallio",
+            "Felix",
+            "Agrippa"
+        ],
+        "correct": "Sergius Paulus"
+    },
+    {
+        "questionId": "NTS0024",
+        "question": "Which city did Paul describe as being full of idols, leading him to speak about 'the Unknown God'?",
+        "answers": [
+            "Corinth",
+            "Athens",
+            "Ephesus",
+            "Rome"
+        ],
+        "correct": "Athens"
+    },
+    {
+        "questionId": "NTS0025",
+        "question": "Who was the female disciple in Joppa known for her good deeds, whom Peter raised from the dead?",
+        "answers": [
+            "Lydia",
+            "Priscilla",
+            "Tabitha (Dorcas)",
+            "Phoebe"
+        ],
+        "correct": "Tabitha (Dorcas)"
+    },
+    {
+        "questionId": "NTS0026",
+        "question": "Which prophet predicted a severe famine during the reign of Claudius?",
+        "answers": [
+            "Agabus",
+            "Barnabas",
+            "Silas",
+            "John Mark"
+        ],
+        "correct": "Agabus"
+    },
+    {
+        "questionId": "NTS0027",
+        "question": "Who was the sorcerer Paul confronted on the island of Cyprus?",
+        "answers": [
+            "Simon Magus",
+            "Elymas",
+            "Alexander",
+            "Demetrius"
+        ],
+        "correct": "Elymas"
+    },
+    {
+        "questionId": "NTS0028",
+        "question": "Which island was Paul shipwrecked on during his journey to Rome?",
+        "answers": [
+            "Crete",
+            "Malta",
+            "Patmos",
+            "Cyprus"
+        ],
+        "correct": "Malta"
+    },
+    {
+        "questionId": "NTS0029",
+        "question": "Who was the ruler of the synagogue in Corinth who became a believer?",
+        "answers": [
+            "Crispus",
+            "Sosthenes",
+            "Gaius",
+            "Stephanas"
+        ],
+        "correct": "Crispus"
+    },
+    {
+        "questionId": "NTS0030",
+        "question": "Which woman was described as a seller of purple from the city of Thyatira?",
+        "answers": [
+            "Priscilla",
+            "Phoebe",
+            "Lydia",
+            "Eunice"
+        ],
+        "correct": "Lydia"
+    }
+]
