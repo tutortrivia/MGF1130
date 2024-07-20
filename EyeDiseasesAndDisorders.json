@@ -1,0 +1,242 @@
+[
+    {
+        "questionId": "ED0000001",
+        "question": "Which of the following is a leading cause of blindness worldwide?",
+        "answers": ["Cataracts", "Conjunctivitis", "Stye", "Blepharitis"],
+        "correct": "Cataracts"
+    },
+    {
+        "questionId": "ED0000002",
+        "question": "What is the most common type of glaucoma?",
+        "answers": ["Open-angle glaucoma", "Angle-closure glaucoma", "Normal-tension glaucoma", "Congenital glaucoma"],
+        "correct": "Open-angle glaucoma"
+    },
+    {
+        "questionId": "ED0000003",
+        "question": "Which condition is characterized by damage to the macula, typically in older adults?",
+        "answers": ["Glaucoma", "Cataracts", "Age-related macular degeneration", "Retinitis pigmentosa"],
+        "correct": "Age-related macular degeneration"
+    },
+    {
+        "questionId": "ED0000004",
+        "question": "What is the most common cause of infectious conjunctivitis?",
+        "answers": ["Bacteria", "Viruses", "Fungi", "Parasites"],
+        "correct": "Viruses"
+    },
+    {
+        "questionId": "ED0000005",
+        "question": "Which eye condition is often associated with diabetes?",
+        "answers": ["Retinitis pigmentosa", "Diabetic retinopathy", "Uveitis", "Keratoconus"],
+        "correct": "Diabetic retinopathy"
+    },
+    {
+        "questionId": "ED0000006",
+        "question": "What is the medical term for crossed eyes?",
+        "answers": ["Nystagmus", "Strabismus", "Amblyopia", "Astigmatism"],
+        "correct": "Strabismus"
+    },
+    {
+        "questionId": "ED0000007",
+        "question": "Which condition is characterized by a clouding of the eye's natural lens?",
+        "answers": ["Glaucoma", "Cataracts", "Retinal detachment", "Macular degeneration"],
+        "correct": "Cataracts"
+    },
+    {
+        "questionId": "ED0000008",
+        "question": "What is the most common refractive error?",
+        "answers": ["Myopia", "Hyperopia", "Astigmatism", "Presbyopia"],
+        "correct": "Myopia"
+    },
+    {
+        "questionId": "ED0000009",
+        "question": "Which condition is characterized by inflammation of the uvea?",
+        "answers": ["Keratitis", "Uveitis", "Scleritis", "Blepharitis"],
+        "correct": "Uveitis"
+    },
+    {
+        "questionId": "ED0000010",
+        "question": "What is the medical term for dry eye syndrome?",
+        "answers": ["Xerophthalmia", "Keratoconjunctivitis sicca", "Blepharitis", "Pinguecula"],
+        "correct": "Keratoconjunctivitis sicca"
+    },
+    {
+        "questionId": "ED0000011",
+        "question": "Which condition is characterized by a bulging of the cornea?",
+        "answers": ["Keratoconus", "Pterygium", "Pinguecula", "Arcus senilis"],
+        "correct": "Keratoconus"
+    },
+    {
+        "questionId": "ED0000012",
+        "question": "What is the most common cause of a chalazion?",
+        "answers": ["Bacterial infection", "Viral infection", "Blocked meibomian gland", "Allergic reaction"],
+        "correct": "Blocked meibomian gland"
+    },
+    {
+        "questionId": "ED0000013",
+        "question": "Which condition is characterized by a detachment of the retina from the underlying tissue?",
+        "answers": ["Macular hole", "Retinal detachment", "Vitreous detachment", "Retinitis pigmentosa"],
+        "correct": "Retinal detachment"
+    },
+    {
+        "questionId": "ED0000014",
+        "question": "What is the medical term for nearsightedness?",
+        "answers": ["Hyperopia", "Myopia", "Astigmatism", "Presbyopia"],
+        "correct": "Myopia"
+    },
+    {
+        "questionId": "ED0000015",
+        "question": "Which condition is characterized by a gradual loss of peripheral vision?",
+        "answers": ["Macular degeneration", "Retinitis pigmentosa", "Cataracts", "Amblyopia"],
+        "correct": "Retinitis pigmentosa"
+    },
+    {
+        "questionId": "ED0000016",
+        "question": "What is the most common cause of a red eye?",
+        "answers": ["Conjunctivitis", "Uveitis", "Glaucoma", "Keratitis"],
+        "correct": "Conjunctivitis"
+    },
+    {
+        "questionId": "ED0000017",
+        "question": "Which condition is characterized by an abnormal growth of blood vessels in the retina of premature infants?",
+        "answers": ["Retinopathy of prematurity", "Retinoblastoma", "Coloboma", "Persistent hyperplastic primary vitreous"],
+        "correct": "Retinopathy of prematurity"
+    },
+    {
+        "questionId": "ED0000018",
+        "question": "What is the medical term for lazy eye?",
+        "answers": ["Strabismus", "Nystagmus", "Amblyopia", "Diplopia"],
+        "correct": "Amblyopia"
+    },
+    {
+        "questionId": "ED0000019",
+        "question": "Which condition is characterized by inflammation of the eyelid margins?",
+        "answers": ["Chalazion", "Hordeolum", "Blepharitis", "Entropion"],
+        "correct": "Blepharitis"
+    },
+    {
+        "questionId": "ED0000020",
+        "question": "What is the most common type of ocular tumor in children?",
+        "answers": ["Retinoblastoma", "Melanoma", "Hemangioma", "Neurofibroma"],
+        "correct": "Retinoblastoma"
+    },
+    {
+        "questionId": "ED0000021",
+        "question": "Which condition is characterized by a yellowish-white deposit on the conjunctiva?",
+        "answers": ["Pterygium", "Pinguecula", "Arcus senilis", "Subconjunctival hemorrhage"],
+        "correct": "Pinguecula"
+    },
+    {
+        "questionId": "ED0000022",
+        "question": "What is the medical term for farsightedness?",
+        "answers": ["Myopia", "Hyperopia", "Astigmatism", "Presbyopia"],
+        "correct": "Hyperopia"
+    },
+    {
+        "questionId": "ED0000023",
+        "question": "Which condition is characterized by involuntary eye movements?",
+        "answers": ["Strabismus", "Nystagmus", "Amblyopia", "Diplopia"],
+        "correct": "Nystagmus"
+    },
+    {
+        "questionId": "ED0000024",
+        "question": "What is the most common cause of blindness in children worldwide?",
+        "answers": ["Cataracts", "Glaucoma", "Retinopathy of prematurity", "Vitamin A deficiency"],
+        "correct": "Vitamin A deficiency"
+    },
+    {
+        "questionId": "ED0000025",
+        "question": "Which condition is characterized by inflammation of the cornea?",
+        "answers": ["Keratitis", "Uveitis", "Scleritis", "Iritis"],
+        "correct": "Keratitis"
+    },
+    {
+        "questionId": "ED0000026",
+        "question": "What is the medical term for double vision?",
+        "answers": ["Amblyopia", "Nystagmus", "Diplopia", "Strabismus"],
+        "correct": "Diplopia"
+    },
+    {
+        "questionId": "ED0000027",
+        "question": "Which condition is characterized by a growth of the conjunctiva onto the cornea?",
+        "answers": ["Pinguecula", "Pterygium", "Arcus senilis", "Corneal ulcer"],
+        "correct": "Pterygium"
+    },
+    {
+        "questionId": "ED0000028",
+        "question": "What is the most common cause of acute angle-closure glaucoma?",
+        "answers": ["Pupillary block", "Trauma", "Infection", "Tumor"],
+        "correct": "Pupillary block"
+    },
+    {
+        "questionId": "ED0000029",
+        "question": "Which condition is characterized by a hole in the macula?",
+        "answers": ["Macular hole", "Macular degeneration", "Retinal detachment", "Diabetic retinopathy"],
+        "correct": "Macular hole"
+    },
+    {
+        "questionId": "ED0000030",
+        "question": "What is the medical term for an infection of the eyelash follicle?",
+        "answers": ["Chalazion", "Hordeolum", "Blepharitis", "Trichiasis"],
+        "correct": "Hordeolum"
+    },
+    {
+        "questionId": "ED0000031",
+        "question": "Which condition is characterized by a loss of transparency in the vitreous humor?",
+        "answers": ["Cataracts", "Vitreous floaters", "Retinal detachment", "Macular degeneration"],
+        "correct": "Vitreous floaters"
+    },
+    {
+        "questionId": "ED0000032",
+        "question": "What is the most common cause of microbial keratitis in contact lens wearers?",
+        "answers": ["Staphylococcus aureus", "Pseudomonas aeruginosa", "Herpes simplex virus", "Candida albicans"],
+        "correct": "Pseudomonas aeruginosa"
+    },
+    {
+        "questionId": "ED0000033",
+        "question": "Which condition is characterized by recurrent inflammation of the iris and ciliary body?",
+        "answers": ["Keratitis", "Scleritis", "Iridocyclitis", "Chorioretinitis"],
+        "correct": "Iridocyclitis"
+    },
+    {
+        "questionId": "ED0000034",
+        "question": "What is the medical term for the inability to produce tears?",
+        "answers": ["Xerophthalmia", "Keratoconjunctivitis sicca", "Sjögren's syndrome", "Dacryoadenitis"],
+        "correct": "Xerophthalmia"
+    },
+    {
+        "questionId": "ED0000035",
+        "question": "Which condition is characterized by a blockage in the tear drainage system?",
+        "answers": ["Dacryocystitis", "Blepharitis", "Chalazion", "Hordeolum"],
+        "correct": "Dacryocystitis"
+    },
+    {
+        "questionId": "ED0000036",
+        "question": "What is the most common cause of infectious endophthalmitis after cataract surgery?",
+        "answers": ["Staphylococcus epidermidis", "Pseudomonas aeruginosa", "Candida albicans", "Streptococcus pneumoniae"],
+        "correct": "Staphylococcus epidermidis"
+    },
+    {
+        "questionId": "ED0000037",
+        "question": "Which condition is characterized by a deficiency of vitamin A?",
+        "answers": ["Xerophthalmia", "Keratoconus", "Trachoma", "Onchocerciasis"],
+        "correct": "Xerophthalmia"
+    },
+    {
+        "questionId": "ED0000038",
+        "question": "What is the medical term for inward turning of the eyelid?",
+        "answers": ["Entropion", "Ectropion", "Ptosis", "Trichiasis"],
+        "correct": "Entropion"
+    },
+    {
+        "questionId": "ED0000039",
+        "question": "Which condition is characterized by a chronic, progressive thinning of the cornea?",
+        "answers": ["Keratoconus", "Fuchs' dystrophy", "Lattice dystrophy", "Map-dot-fingerprint dystrophy"],
+        "correct": "Keratoconus"
+    },
+    {
+        "questionId": "ED0000040",
+        "question": "What is the most common cause of infectious blindness worldwide?",
+        "answers": ["Trachoma", "Onchocerciasis", "Toxoplasmosis", "Cytomegalovirus retinitis"],
+        "correct": "Trachoma"
+    }
+]
