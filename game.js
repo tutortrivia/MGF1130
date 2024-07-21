@@ -1,6 +1,8 @@
 const startButton = document.getElementById('start-button');
 const gameContent = document.getElementById('game-content');
 const questionElement = document.getElementById('question');
+const categoryElement = document.getElementById('category');
+const difficultyElement = document.getElementById('difficulty');
 const answersElement = document.getElementById('answers');
 const resultElement = document.getElementById('result');
 const scoreElement = document.getElementById('score');
@@ -13,6 +15,9 @@ const incorrectSound = document.getElementById('incorrectSound');
 const personalBestSound = new Audio('personalBest.mp3');
 let librarySelect = document.getElementById('library-select');
 let gameTitle = document.getElementById('game-title');
+const reviewContainer = document.getElementById('review-container');
+const reviewQuestionsElement = document.getElementById('review-questions');
+const finishReviewButton = document.getElementById('finish-review');
 
 let currentQuestionIndex = 0;
 let score = 0;
@@ -29,6 +34,7 @@ let sessionBest = {
 };
 let currentLibrary = 'Python';
 let currentQuestions = [];
+let answeredQuestions = [];
 
 function getAvailableLibraries() {
     return Object.keys(allQuestions);
@@ -64,6 +70,7 @@ async function startGame() {
     currentQuestionIndex = 0;
     score = 0;
     incorrectAnswers = 0;
+    answeredQuestions = [];
     updateScore();
     timeLeft = 90;
     startMenu.classList.add('hidden');
@@ -83,9 +90,10 @@ function displayQuestion() {
 
     const question = currentQuestions[currentQuestionIndex];
     questionElement.textContent = question.question;
+    categoryElement.textContent = `Category: ${question.category || 'N/A'}`;
+    difficultyElement.textContent = `Difficulty: ${question.difficulty || 'N/A'}`;
     answersElement.innerHTML = '';
 
-    // Shuffle the answers
     const shuffledAnswers = [...question.answers];
     shuffleArray(shuffledAnswers);
 
@@ -101,7 +109,6 @@ function displayQuestion() {
         answersElement.appendChild(button);
     });
 
-    // Set neutral placeholder text
     resultElement.textContent = 'Good Luck!';
     resultElement.classList.add('text-blue-500');
 }
@@ -121,7 +128,8 @@ function checkAnswer(selectedAnswer, correctAnswer) {
         }
     }
 
-    if (selectedAnswer === correctAnswer) {
+    const isCorrect = selectedAnswer === correctAnswer;
+    if (isCorrect) {
         score++;
         resultElement.textContent = 'Correct!';
         resultElement.classList.remove('text-blue-500');
@@ -134,6 +142,12 @@ function checkAnswer(selectedAnswer, correctAnswer) {
         resultElement.classList.add('text-red-500');
         if (!isMuted) incorrectSound.play();
     }
+
+    answeredQuestions.push({
+        ...currentQuestions[currentQuestionIndex],
+        userAnswer: selectedAnswer,
+        isCorrect: isCorrect
+    });
 
     updateScore();
 
@@ -177,7 +191,7 @@ function updateTimerDisplay() {
 function endGame() {
     clearInterval(timer);
     gameContent.classList.add('hidden');
-    startMenu.classList.remove('hidden');
+    reviewContainer.classList.remove('hidden');
 
     const attempted = score + incorrectAnswers;
     const percentageCorrect = attempted > 0 ? (score / attempted * 100).toFixed(2) : 0;
@@ -216,19 +230,54 @@ function endGame() {
         personalBestSound.play();
     }
 
-    resultsHTML += `
-        <button id="play-again" class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded mt-4">Play Again</button>
-    `;
-
-    startMenu.innerHTML = resultsHTML;
-
-    document.getElementById('play-again').addEventListener('click', showStartMenu);
+    reviewQuestionsElement.innerHTML = resultsHTML;
+    displayReviewQuestions();
 
     backgroundMusic.pause();
     backgroundMusic.currentTime = 0;
 }
 
+function displayReviewQuestions() {
+    answeredQuestions.forEach((question, index) => {
+        const questionReview = document.createElement('div');
+        questionReview.classList.add('mb-4', 'p-4', 'border', 'rounded');
+        questionReview.innerHTML = `
+            <p class="font-semibold">${index + 1}. ${question.question}</p>
+            <p>Your answer: ${question.userAnswer}</p>
+            <p>Correct answer: ${question.correct}</p>
+            <p>Explanation: ${question.explanation || 'Not provided'}</p>
+            <button class="flag-question mt-2 bg-yellow-500 hover:bg-yellow-600 text-white font-bold py-1 px-2 rounded" data-index="${index}">Flag Question</button>
+        `;
+        if (question.isCorrect) {
+            questionReview.classList.add('bg-green-100');
+        } else {
+            questionReview.classList.add('bg-red-100');
+        }
+        reviewQuestionsElement.appendChild(questionReview);
+    });
+
+    const flagButtons = document.querySelectorAll('.flag-question');
+    flagButtons.forEach(button => {
+        button.addEventListener('click', (e) => {
+            const index = e.target.getAttribute('data-index');
+            flagQuestion(index);
+        });
+    });
+}
+
+function flagQuestion(index) {
+    const questionToFlag = answeredQuestions[index];
+    const feedbackPrompt = prompt('Please provide feedback for this question:');
+    if (feedbackPrompt) {
+        // Here you would typically send this feedback to your server
+        console.log(`Feedback for question ${index}:`, feedbackPrompt);
+        alert('Thank you for your feedback!');
+    }
+}
+
 function showStartMenu() {
+    reviewContainer.classList.add('hidden');
+    startMenu.classList.remove('hidden');
     startMenu.innerHTML = `
         <select id="library-select" class="bg-white border border-gray-300 rounded-md py-2 px-4 mb-4 w-full md:w-1/2 mx-auto"></select>
         <button id="get-tutoring-button" class="bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded mb-4 w-full md:w-1/2 mx-auto">Learn Through Games</button>
@@ -259,10 +308,9 @@ function getTutoring() {
     window.open('https://mindcraftmagazine.beehiiv.com/subscribe', '_blank');
 }
 
-
-
 // Initialize the game
 showStartMenu();
 
 // Event listeners
 volumeToggle.addEventListener('click', toggleVolume);
+finishReviewButton.addEventListener('click', showStartMenu);
