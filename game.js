@@ -27,7 +27,7 @@ let sessionBest = {
     incorrect: 0,
     percentage: 0
 };
-let currentLibrary = 'OldTestamentQuotes';
+let currentLibrary = 'Python';
 let currentQuestions = [];
 
 function getAvailableLibraries() {
