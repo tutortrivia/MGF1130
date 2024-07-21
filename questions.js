@@ -1,8 +1,5 @@
 const allQuestions = {
-    NewTestamentQuotes: null,
-    OldTestamentQuotes: null,
-    NewTestamentStories: null,
-    OldTestamentStories: null
+    Python: null
 };
 
 async function loadQuestionLibrary(libraryName) {
