@@ -269,9 +269,7 @@ function flagQuestion(index) {
     const questionToFlag = answeredQuestions[index];
     const feedbackPrompt = prompt('Please provide feedback for this question:');
     if (feedbackPrompt) {
-        // Here you would typically send this feedback to your server
-        console.log(`Feedback for question ${index}:`, feedbackPrompt);
-        alert('Thank you for your feedback!');
+        sendFeedbackToGoogleSheets(questionToFlag.questionId, feedbackPrompt);
     }
 }
 
@@ -307,6 +305,34 @@ function toggleVolume() {
 function getTutoring() {
     window.open('https://mindcraftmagazine.beehiiv.com/subscribe', '_blank');
 }
+
+function sendFeedbackToGoogleSheets(questionId, feedback) {
+    const scriptURL = 'YOUR_GOOGLE_SCRIPT_URL_HERE'; // Replace with the URL you copied
+    const data = {
+        questionId: questionId,
+        feedback: feedback
+    };
+
+    fetch(scriptURL, {
+        method: 'POST',
+        body: JSON.stringify(data),
+        headers: {
+            'Content-Type': 'application/json'
+        }
+    })
+    .then(response => {
+        if (response.ok) {
+            alert('Feedback submitted successfully!');
+        } else {
+            throw new Error('Network response was not ok.');
+        }
+    })
+    .catch(error => {
+        console.error('Error:', error);
+        alert('There was an error submitting your feedback. Please try again.');
+    });
+}
+
 
 // Initialize the game
 showStartMenu();
