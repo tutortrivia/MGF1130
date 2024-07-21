@@ -13,6 +13,7 @@ async function loadQuestionLibrary(libraryName) {
             allQuestions[libraryName] = questions;
         } catch (error) {
             console.error(`Could not load the ${libraryName} question library:`, error);
+            return null;
         }
     }
     return allQuestions[libraryName];
