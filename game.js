@@ -307,7 +307,7 @@ function getTutoring() {
 }
 
 function sendFeedbackToGoogleSheets(questionId, feedback) {
-    const scriptURL = 'YOUR_GOOGLE_SCRIPT_URL_HERE'; // Replace with the URL you copied
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbzep2dpWxdSadsP6XIeQzufw3NPfalH2UNXPl18_g80Ph2WczxzhtQWV4Czff6RtbrB/exec'; // Replace with the new URL you copied
     const data = {
         questionId: questionId,
         feedback: feedback
