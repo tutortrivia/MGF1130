@@ -274,7 +274,7 @@ function flagQuestion(index) {
 }
 
 function sendFeedbackToGoogleSheets(questionId, feedback) {
-    const scriptURL = 'https://script.google.com/macros/s/AKfycbxz77zpMHjekNCDxXFafimREiVfUTJoAExgzpGhBVJiuwbgDmua3s-t1ZNVmAjjktBc/exec';
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbyFgKe0-xM0iUIjaYJ5KlqwN_Gbc6xw893PoHSoAAJ_e9KJGNLwrRGWr6h0wM1ErG9T/exec';
     const data = {
         questionId: questionId,
         feedback: feedback
