@@ -274,7 +274,7 @@ function flagQuestion(index) {
 }
 
 function sendFeedbackToGoogleSheets(questionId, feedback) {
-    const scriptURL = 'https://script.google.com/macros/s/AKfycbx-hxPwMOCmmHbw03idP1mwLPDQ3vUgNPxWmIQZvumv6W8ftVhWBJW3FNzo4nTleBop/exec';
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbxz77zpMHjekNCDxXFafimREiVfUTJoAExgzpGhBVJiuwbgDmua3s-t1ZNVmAjjktBc/exec';
     const data = {
         questionId: questionId,
         feedback: feedback
@@ -282,6 +282,7 @@ function sendFeedbackToGoogleSheets(questionId, feedback) {
 
     fetch(scriptURL, {
         method: 'POST',
+        mode: 'cors',
         body: JSON.stringify(data),
         headers: {
             'Content-Type': 'application/json'
