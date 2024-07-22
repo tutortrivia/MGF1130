@@ -283,6 +283,7 @@ function sendFeedbackToGoogleSheets(questionId, feedback) {
     fetch(scriptURL, {
         method: 'POST',
         mode: 'cors',
+        credentials: 'omit',
         body: JSON.stringify(data),
         headers: {
             'Content-Type': 'application/json'
