@@ -273,6 +273,37 @@ function flagQuestion(index) {
     }
 }
 
+function sendFeedbackToGoogleSheets(questionId, feedback) {
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbx-hxPwMOCmmHbw03idP1mwLPDQ3vUgNPxWmIQZvumv6W8ftVhWBJW3FNzo4nTleBop/exec';
+    const data = {
+        questionId: questionId,
+        feedback: feedback
+    };
+
+    fetch(scriptURL, {
+        method: 'POST',
+        body: JSON.stringify(data),
+        headers: {
+            'Content-Type': 'application/json'
+        }
+    })
+    .then(response => {
+        if (response.ok) {
+            return response.text();
+        } else {
+            throw new Error(`HTTP error! status: ${response.status}`);
+        }
+    })
+    .then(text => {
+        console.log('Response:', text);
+        alert('Feedback submitted successfully!');
+    })
+    .catch(error => {
+        console.error('Error:', error);
+        alert(`There was an error submitting your feedback: ${error.message}. Please try again.`);
+    });
+}
+
 function showStartMenu() {
     reviewContainer.classList.add('hidden');
     startMenu.classList.remove('hidden');
@@ -305,34 +336,6 @@ function toggleVolume() {
 function getTutoring() {
     window.open('https://mindcraftmagazine.beehiiv.com/subscribe', '_blank');
 }
-
-function sendFeedbackToGoogleSheets(questionId, feedback) {
-    const scriptURL = 'https://script.google.com/macros/s/AKfycbzep2dpWxdSadsP6XIeQzufw3NPfalH2UNXPl18_g80Ph2WczxzhtQWV4Czff6RtbrB/exec'; // Replace with the new URL you copied
-    const data = {
-        questionId: questionId,
-        feedback: feedback
-    };
-
-    fetch(scriptURL, {
-        method: 'POST',
-        body: JSON.stringify(data),
-        headers: {
-            'Content-Type': 'application/json'
-        }
-    })
-    .then(response => {
-        if (response.ok) {
-            alert('Feedback submitted successfully!');
-        } else {
-            throw new Error('Network response was not ok.');
-        }
-    })
-    .catch(error => {
-        console.error('Error:', error);
-        alert('There was an error submitting your feedback. Please try again.');
-    });
-}
-
 
 // Initialize the game
 showStartMenu();
