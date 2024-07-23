@@ -302,7 +302,7 @@ function sendFeedbackToGoogleSheets(questionId, feedback) {
     })
     .catch(error => {
         console.error('Error:', error);
-        alert(`There was an error submitting your feedback: ${error.message}. Please try again.`);
+        alert(`${error.message}. This feature is still under development.`);
     });
 }
 
