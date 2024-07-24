@@ -292,5 +292,271 @@
     "explanation": "The intersection of any set A with the empty set is always the empty set, as there are no elements common to both A and the empty set.",
     "category": "Operations",
     "difficulty": "Medium"
+  },
+  {
+    "questionId": "ST0000022",
+    "question": "What is the associative property of set operations?",
+    "answers": [
+      "(A ∪ B) ∪ C = A ∪ (B ∪ C) and (A ∩ B) ∩ C = A ∩ (B ∩ C)",
+      "A ∪ B = B ∪ A and A ∩ B = B ∩ A",
+      "A ∪ (B ∩ C) = (A ∪ B) ∩ (A ∪ C)",
+      "A ∩ (B ∪ C) = (A ∩ B) ∪ (A ∩ C)"
+    ],
+    "correct": "(A ∪ B) ∪ C = A ∪ (B ∪ C) and (A ∩ B) ∩ C = A ∩ (B ∩ C)",
+    "explanation": "The associative property states that the grouping of sets in union or intersection operations does not affect the result.",
+    "category": "Principles",
+    "difficulty": "Medium"
+  },
+  {
+    "questionId": "ST0000023",
+    "question": "What is the definition of a partition of a set?",
+    "answers": [
+      "A collection of non-empty, disjoint subsets whose union is the original set",
+      "A division of a set into two equal parts",
+      "The process of removing elements from a set",
+      "The creation of a new set from existing elements"
+    ],
+    "correct": "A collection of non-empty, disjoint subsets whose union is the original set",
+    "explanation": "A partition of a set is a collection of non-empty, disjoint subsets whose union is the entire original set.",
+    "category": "Advanced Concepts",
+    "difficulty": "Hard"
+  },
+  {
+    "questionId": "ST0000024",
+    "question": "What is the meaning of A - B in set theory?",
+    "answers": [
+      "Elements in A that are not in B",
+      "Elements in B that are not in A",
+      "Elements common to both A and B",
+      "The absolute difference between the cardinalities of A and B"
+    ],
+    "correct": "Elements in A that are not in B",
+    "explanation": "A - B, also known as the set difference, represents the set of elements that are in A but not in B.",
+    "category": "Operations",
+    "difficulty": "Medium"
+  },
+  {
+    "questionId": "ST0000025",
+    "question": "What is the definition of a countable set?",
+    "answers": [
+      "A set that can be put in one-to-one correspondence with a subset of the natural numbers",
+      "A set with a finite number of elements",
+      "A set that can be counted in a finite amount of time",
+      "A set whose elements can be arranged in a specific order"
+    ],
+    "correct": "A set that can be put in one-to-one correspondence with a subset of the natural numbers",
+    "explanation": "A countable set is one that can be put into a one-to-one correspondence with either the set of natural numbers or a subset of it.",
+    "category": "Cardinality",
+    "difficulty": "Hard"
+  },
+  {
+    "questionId": "ST0000026",
+    "question": "What is the commutative property of set operations?",
+    "answers": [
+      "A ∪ B = B ∪ A and A ∩ B = B ∩ A",
+      "A ∪ (B ∪ C) = (A ∪ B) ∪ C",
+      "A ∪ (B ∩ C) = (A ∪ B) ∩ (A ∪ C)",
+      "A - B ≠ B - A"
+    ],
+    "correct": "A ∪ B = B ∪ A and A ∩ B = B ∩ A",
+    "explanation": "The commutative property states that the order of sets in union and intersection operations does not affect the result.",
+    "category": "Principles",
+    "difficulty": "Medium"
+  },
+  {
+    "questionId": "ST0000027",
+    "question": "What is the definition of a proper subset?",
+    "answers": [
+      "A subset that is not equal to the original set",
+      "Any subset of a set",
+      "A subset that contains exactly half the elements of the original set",
+      "A subset that contains only one element"
+    ],
+    "correct": "A subset that is not equal to the original set",
+    "explanation": "A proper subset is a subset that is strictly contained within the original set, meaning it cannot be equal to the original set.",
+    "category": "Relationships",
+    "difficulty": "Medium"
+  },
+  {
+    "questionId": "ST0000028",
+    "question": "What is the result of A ∪ U, where U is the universal set?",
+    "answers": [
+      "U",
+      "A",
+      "∅",
+      "A'"
+    ],
+    "correct": "U",
+    "explanation": "The union of any set A with the universal set U is always the universal set U, as U contains all possible elements.",
+    "category": "Operations",
+    "difficulty": "Medium"
+  },
+  {
+    "questionId": "ST0000029",
+    "question": "What is the distributive property of set operations?",
+    "answers": [
+      "A ∪ (B ∩ C) = (A ∪ B) ∩ (A ∪ C) and A ∩ (B ∪ C) = (A ∩ B) ∪ (A ∩ C)",
+      "A ∪ B = B ∪ A and A ∩ B = B ∩ A",
+      "A ∪ (B ∪ C) = (A ∪ B) ∪ C",
+      "(A ∪ B)' = A' ∩ B'"
+    ],
+    "correct": "A ∪ (B ∩ C) = (A ∪ B) ∩ (A ∪ C) and A ∩ (B ∪ C) = (A ∩ B) ∪ (A ∩ C)",
+    "explanation": "The distributive property shows how union distributes over intersection and vice versa.",
+    "category": "Principles",
+    "difficulty": "Hard"
+  },
+  {
+    "questionId": "ST0000030",
+    "question": "What is the definition of the absolute complement of a set?",
+    "answers": [
+      "All elements in the universal set that are not in the given set",
+      "All elements in the given set",
+      "The intersection of the set with the universal set",
+      "The union of the set with the empty set"
+    ],
+    "correct": "All elements in the universal set that are not in the given set",
+    "explanation": "The absolute complement of a set A, often denoted A' or A^c, is the set of all elements in the universal set that are not in A.",
+    "category": "Operations",
+    "difficulty": "Medium"
+  },
+  {
+    "questionId": "ST0000031",
+    "question": "What is the cardinality of the set of rational numbers?",
+    "answers": [
+      "Countably infinite",
+      "Uncountably infinite",
+      "Finite",
+      "Zero"
+    ],
+    "correct": "Countably infinite",
+    "explanation": "The set of rational numbers is countably infinite, meaning it can be put into a one-to-one correspondence with the natural numbers.",
+    "category": "Cardinality",
+    "difficulty": "Hard"
+  },
+  {
+    "questionId": "ST0000032",
+    "question": "What is the definition of a multiset?",
+    "answers": [
+      "A set-like object in which elements can occur more than once",
+      "A set with only one element",
+      "A set with an infinite number of elements",
+      "A set containing only numbers"
+    ],
+    "correct": "A set-like object in which elements can occur more than once",
+    "explanation": "A multiset is a modification of the concept of a set that allows for multiple instances of elements.",
+    "category": "Advanced Concepts",
+    "difficulty": "Hard"
+  },
+  {
+    "questionId": "ST0000033",
+    "question": "What is the result of A ∩ A for any set A?",
+    "answers": [
+      "A",
+      "∅",
+      "U",
+      "A'"
+    ],
+    "correct": "A",
+    "explanation": "The intersection of a set with itself is just the set itself, as it contains all elements that are in both A and A, which is simply A.",
+    "category": "Operations",
+    "difficulty": "Easy"
+  },
+  {
+    "questionId": "ST0000034",
+    "question": "What is the principle of inclusion-exclusion used for?",
+    "answers": [
+      "Calculating the number of elements in the union of multiple sets",
+      "Determining if a set is finite or infinite",
+      "Proving that two sets are equal",
+      "Defining the universal set"
+    ],
+    "correct": "Calculating the number of elements in the union of multiple sets",
+    "explanation": "The principle of inclusion-exclusion is used to calculate the cardinality of the union of multiple sets, taking into account the overlaps between sets.",
+    "category": "Advanced Concepts",
+    "difficulty": "Hard"
+  },
+  {
+    "questionId": "ST0000035",
+    "question": "What is the definition of the symmetric difference of sets A and B?",
+    "answers": [
+      "(A ∪ B) - (A ∩ B)",
+      "A ∪ B",
+      "A ∩ B",
+      "A - B"
+    ],
+    "correct": "(A ∪ B) - (A ∩ B)",
+    "explanation": "The symmetric difference of sets A and B is the set of elements which are in either A or B but not in their intersection.",
+    "category": "Operations",
+    "difficulty": "Hard"
+  },
+  {
+    "questionId": "ST0000036",
+    "question": "What is the cardinality of the power set of a finite set with n elements?",
+    "answers": [
+      "2^n",
+      "n^2",
+      "n!",
+      "2n"
+    ],
+    "correct": "2^n",
+    "explanation": "The power set of a set with n elements has 2^n elements, as each element can either be included or excluded in each subset.",
+    "category": "Cardinality",
+    "difficulty": "Medium"
+  },
+  {
+    "questionId": "ST0000037",
+    "question": "What is the definition of an equivalence relation?",
+    "answers": [
+      "A relation that is reflexive, symmetric, and transitive",
+      "A relation that is only reflexive",
+      "A relation that is only symmetric",
+      "A relation that is only transitive"
+    ],
+    "correct": "A relation that is reflexive, symmetric, and transitive",
+    "explanation": "An equivalence relation is a binary relation that is reflexive (every element is related to itself), symmetric (if a is related to b, then b is related to a), and transitive (if a is related to b and b is related to c, then a is related to c).",
+    "category": "Advanced Concepts",
+    "difficulty": "Hard"
+  },
+  {
+    "questionId": "ST0000038",
+    "question": "What is the Axiom of Extensionality in set theory?",
+    "answers": [
+      "Two sets are equal if and only if they have the same elements",
+      "Every set is a subset of itself",
+      "The union of a set and its complement is the universal set",
+      "The intersection of a set and the empty set is the empty set"
+    ],
+    "correct": "Two sets are equal if and only if they have the same elements",
+    "explanation": "The Axiom of Extensionality states that two sets are considered equal if and only if they have exactly the same elements, regardless of how they are defined or represented.",
+    "category": "Principles",
+    "difficulty": "Hard"
+  },
+  {
+    "questionId": "ST0000039",
+    "question": "What is the result of A ∪ A' for any set A?",
+    "answers": [
+      "U (Universal set)",
+      "∅ (Empty set)",
+      "A",
+      "A'"
+    ],
+    "correct": "U (Universal set)",
+    "explanation": "The union of a set and its complement is always the universal set, as it includes all elements that are either in A or not in A, which covers all possibilities.",
+    "category": "Operations",
+    "difficulty": "Medium"
+  },
+  {
+    "questionId": "ST0000040",
+    "question": "What is the definition of a binary relation from set A to set B?",
+    "answers": [
+      "A subset of the Cartesian product A × B",
+      "The union of sets A and B",
+      "The intersection of sets A and B",
+      "The power set of A"
+    ],
+    "correct": "A subset of the Cartesian product A × B",
+    "explanation": "A binary relation from set A to set B is defined as a subset of the Cartesian product A × B, which consists of ordered pairs (a, b) where a ∈ A and b ∈ B.",
+    "category": "Advanced Concepts",
+    "difficulty": "Hard"
   }
 ]
