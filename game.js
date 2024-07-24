@@ -32,7 +32,7 @@ let sessionBest = {
     incorrect: 0,
     percentage: 0
 };
-let currentLibrary = 'Python';
+let currentLibrary = 'SetTheory';
 let currentQuestions = [];
 let answeredQuestions = [];
 
