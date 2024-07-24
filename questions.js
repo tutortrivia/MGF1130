@@ -1,6 +1,7 @@
 const allQuestions = {
     SetTheory: null,
-    Logic: null
+    Logic: null,
+    Numeration: null
 };
 
 async function loadQuestionLibrary(libraryName) {
