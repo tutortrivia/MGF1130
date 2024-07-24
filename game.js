@@ -18,6 +18,8 @@ let gameTitle = document.getElementById('game-title');
 const reviewContainer = document.getElementById('review-container');
 const reviewQuestionsElement = document.getElementById('review-questions');
 const finishReviewButton = document.getElementById('finish-review');
+const qrToggle = document.getElementById('qr-toggle');
+const qrImage = document.getElementById('qr-image');
 
 let currentQuestionIndex = 0;
 let score = 0;
@@ -35,6 +37,16 @@ let sessionBest = {
 let currentLibrary = 'SetTheory';
 let currentQuestions = [];
 let answeredQuestions = [];
+
+function toggleQRCode() {
+    if (qrImage.classList.contains('hidden')) {
+        qrImage.classList.remove('hidden');
+        qrToggle.textContent = 'Hide QR';
+    } else {
+        qrImage.classList.add('hidden');
+        qrToggle.textContent = 'Display QR';
+    }
+}
 
 function getAvailableLibraries() {
     return Object.keys(allQuestions);
@@ -345,3 +357,4 @@ showStartMenu();
 // Event listeners
 volumeToggle.addEventListener('click', toggleVolume);
 finishReviewButton.addEventListener('click', showStartMenu);
+qrToggle.addEventListener('click', toggleQRCode);
