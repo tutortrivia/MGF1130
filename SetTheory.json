@@ -1,0 +1,296 @@
+[
+  {
+    "questionId": "ST0000001",
+    "question": "What is a set in mathematics?",
+    "answers": [
+      "A collection of distinct objects",
+      "A list of numbers",
+      "A mathematical equation",
+      "A geometric shape"
+    ],
+    "correct": "A collection of distinct objects",
+    "explanation": "In mathematics, a set is defined as a collection of distinct objects, considered as an object in its own right.",
+    "category": "Basics",
+    "difficulty": "Easy"
+  },
+  {
+    "questionId": "ST0000002",
+    "question": "Which symbol is used to denote 'element of' in set notation?",
+    "answers": [
+      "∈",
+      "⊂",
+      "∩",
+      "∪"
+    ],
+    "correct": "∈",
+    "explanation": "The symbol ∈ is used to denote that an element belongs to a set. For example, x ∈ A means x is an element of set A.",
+    "category": "Notation",
+    "difficulty": "Easy"
+  },
+  {
+    "questionId": "ST0000003",
+    "question": "What does the symbol ∅ represent in set theory?",
+    "answers": [
+      "Empty set",
+      "Infinity",
+      "Union",
+      "Intersection"
+    ],
+    "correct": "Empty set",
+    "explanation": "The symbol ∅ represents the empty set, which is a set that contains no elements.",
+    "category": "Notation",
+    "difficulty": "Easy"
+  },
+  {
+    "questionId": "ST0000004",
+    "question": "What is the cardinality of the empty set?",
+    "answers": [
+      "0",
+      "1",
+      "Undefined",
+      "Infinity"
+    ],
+    "correct": "0",
+    "explanation": "The cardinality of a set is the number of elements it contains. The empty set contains no elements, so its cardinality is 0.",
+    "category": "Cardinality",
+    "difficulty": "Easy"
+  },
+  {
+    "questionId": "ST0000005",
+    "question": "What is the union of two sets A and B?",
+    "answers": [
+      "All elements that are in A or B (or both)",
+      "All elements that are in both A and B",
+      "All elements that are in A but not in B",
+      "All elements that are in B but not in A"
+    ],
+    "correct": "All elements that are in A or B (or both)",
+    "explanation": "The union of sets A and B, denoted A ∪ B, is the set of all elements that are in A, in B, or in both A and B.",
+    "category": "Operations",
+    "difficulty": "Medium"
+  },
+  {
+    "questionId": "ST0000006",
+    "question": "What is the intersection of two sets A and B?",
+    "answers": [
+      "All elements that are in both A and B",
+      "All elements that are in A or B (or both)",
+      "All elements that are in A but not in B",
+      "All elements that are in B but not in A"
+    ],
+    "correct": "All elements that are in both A and B",
+    "explanation": "The intersection of sets A and B, denoted A ∩ B, is the set of all elements that are in both A and B.",
+    "category": "Operations",
+    "difficulty": "Medium"
+  },
+  {
+    "questionId": "ST0000007",
+    "question": "What is the complement of a set A?",
+    "answers": [
+      "All elements in the universal set that are not in A",
+      "All elements in A",
+      "The empty set",
+      "The universal set"
+    ],
+    "correct": "All elements in the universal set that are not in A",
+    "explanation": "The complement of set A, often denoted A' or A^c, is the set of all elements in the universal set that are not in A.",
+    "category": "Operations",
+    "difficulty": "Medium"
+  },
+  {
+    "questionId": "ST0000008",
+    "question": "What is a subset?",
+    "answers": [
+      "A set whose elements are all contained in another set",
+      "A set that contains all elements of another set",
+      "Two sets with the same elements",
+      "A set with infinite elements"
+    ],
+    "correct": "A set whose elements are all contained in another set",
+    "explanation": "A subset is a set whose elements are all contained in another set. If A is a subset of B, we write A ⊆ B.",
+    "category": "Relationships",
+    "difficulty": "Medium"
+  },
+  {
+    "questionId": "ST0000009",
+    "question": "What is the power set of a set?",
+    "answers": [
+      "The set of all subsets of the given set",
+      "The set of all elements raised to a power",
+      "The largest possible subset",
+      "The set of all prime number elements"
+    ],
+    "correct": "The set of all subsets of the given set",
+    "explanation": "The power set of a set A is the set of all subsets of A, including the empty set and A itself.",
+    "category": "Advanced Concepts",
+    "difficulty": "Hard"
+  },
+  {
+    "questionId": "ST0000010",
+    "question": "If set A has n elements, how many elements are in its power set?",
+    "answers": [
+      "2^n",
+      "n^2",
+      "2n",
+      "n!"
+    ],
+    "correct": "2^n",
+    "explanation": "If a set A has n elements, its power set has 2^n elements. This is because for each element, we have two choices: include it in a subset or not.",
+    "category": "Advanced Concepts",
+    "difficulty": "Hard"
+  },
+  {
+    "questionId": "ST0000011",
+    "question": "What is a Venn diagram used for in set theory?",
+    "answers": [
+      "To visually represent relationships between sets",
+      "To calculate the cardinality of sets",
+      "To prove set theory theorems",
+      "To generate random sets"
+    ],
+    "correct": "To visually represent relationships between sets",
+    "explanation": "Venn diagrams are used to visually represent relationships between sets, showing overlaps and distinctions between different sets.",
+    "category": "Visualization",
+    "difficulty": "Easy"
+  },
+  {
+    "questionId": "ST0000012",
+    "question": "What is the symmetric difference of two sets A and B?",
+    "answers": [
+      "Elements in A or B, but not in both",
+      "Elements in both A and B",
+      "Elements in A that are not in B",
+      "Elements in B that are not in A"
+    ],
+    "correct": "Elements in A or B, but not in both",
+    "explanation": "The symmetric difference of sets A and B, often denoted A Δ B, is the set of elements which are in either A or B but not in both.",
+    "category": "Operations",
+    "difficulty": "Hard"
+  },
+  {
+    "questionId": "ST0000013",
+    "question": "What is the Cartesian product of two sets A and B?",
+    "answers": [
+      "The set of all ordered pairs (a,b) where a ∈ A and b ∈ B",
+      "The set of all common elements between A and B",
+      "The sum of the cardinalities of A and B",
+      "The set of all subsets of A and B"
+    ],
+    "correct": "The set of all ordered pairs (a,b) where a ∈ A and b ∈ B",
+    "explanation": "The Cartesian product of sets A and B, denoted A × B, is the set of all ordered pairs (a,b) where a is an element of A and b is an element of B.",
+    "category": "Advanced Concepts",
+    "difficulty": "Hard"
+  },
+  {
+    "questionId": "ST0000014",
+    "question": "What is the difference between ⊂ and ⊆ in set notation?",
+    "answers": [
+      "⊂ denotes proper subset, ⊆ denotes subset or equal",
+      "⊂ denotes subset or equal, ⊆ denotes proper subset",
+      "⊂ denotes union, ⊆ denotes intersection",
+      "⊂ denotes element of, ⊆ denotes not an element of"
+    ],
+    "correct": "⊂ denotes proper subset, ⊆ denotes subset or equal",
+    "explanation": "⊂ denotes a proper subset (subset but not equal), while ⊆ denotes a subset that may or may not be equal to the set.",
+    "category": "Notation",
+    "difficulty": "Medium"
+  },
+  {
+    "questionId": "ST0000015",
+    "question": "What is the law of excluded middle in set theory?",
+    "answers": [
+      "For any set A, an element x is either in A or in A's complement",
+      "The union of a set and its complement is always empty",
+      "The intersection of a set and its complement is always the universal set",
+      "Every set is a subset of itself"
+    ],
+    "correct": "For any set A, an element x is either in A or in A's complement",
+    "explanation": "The law of excluded middle states that for any set A and any element x in the universal set, x is either in A or in A's complement (A'), with no third possibility.",
+    "category": "Principles",
+    "difficulty": "Hard"
+  },
+  {
+    "questionId": "ST0000016",
+    "question": "What is the cardinality of the set of real numbers?",
+    "answers": [
+      "Uncountably infinite",
+      "Countably infinite",
+      "Finite",
+      "Zero"
+    ],
+    "correct": "Uncountably infinite",
+    "explanation": "The set of real numbers is uncountably infinite, meaning it cannot be put into a one-to-one correspondence with the natural numbers.",
+    "category": "Cardinality",
+    "difficulty": "Hard"
+  },
+  {
+    "questionId": "ST0000017",
+    "question": "What is the definition of two sets being disjoint?",
+    "answers": [
+      "Their intersection is the empty set",
+      "Their union is the universal set",
+      "They have the same number of elements",
+      "One is a subset of the other"
+    ],
+    "correct": "Their intersection is the empty set",
+    "explanation": "Two sets are disjoint if they have no elements in common, meaning their intersection is the empty set.",
+    "category": "Relationships",
+    "difficulty": "Medium"
+  },
+  {
+    "questionId": "ST0000018",
+    "question": "What is De Morgan's law for sets?",
+    "answers": [
+      "(A ∪ B)' = A' ∩ B' and (A ∩ B)' = A' ∪ B'",
+      "(A ∪ B)' = A' ∪ B' and (A ∩ B)' = A' ∩ B'",
+      "(A ∪ B)' = A ∩ B and (A ∩ B)' = A ∪ B",
+      "(A ∪ B)' = A' ∩ B and (A ∩ B)' = A' ∪ B"
+    ],
+    "correct": "(A ∪ B)' = A' ∩ B' and (A ∩ B)' = A' ∪ B'",
+    "explanation": "De Morgan's laws state that the complement of a union is the intersection of the complements, and the complement of an intersection is the union of the complements.",
+    "category": "Principles",
+    "difficulty": "Hard"
+  },
+  {
+    "questionId": "ST0000019",
+    "question": "What is the definition of an infinite set?",
+    "answers": [
+      "A set that can be put in one-to-one correspondence with a proper subset of itself",
+      "A set with more than 100 elements",
+      "A set that contains all possible elements",
+      "A set that cannot be counted"
+    ],
+    "correct": "A set that can be put in one-to-one correspondence with a proper subset of itself",
+    "explanation": "An infinite set is defined as a set that can be put into a one-to-one correspondence with a proper subset of itself.",
+    "category": "Cardinality",
+    "difficulty": "Hard"
+  },
+  {
+    "questionId": "ST0000020",
+    "question": "What is the result of A ∪ A for any set A?",
+    "answers": [
+      "A",
+      "∅",
+      "2A",
+      "A^2"
+    ],
+    "correct": "A",
+    "explanation": "The union of a set with itself is just the set itself, as it contains all elements that are in A or in A, which is simply A.",
+    "category": "Operations",
+    "difficulty": "Medium"
+  },
+  {
+    "questionId": "ST0000021",
+    "question": "What is the result of A ∩ ∅ for any set A?",
+    "answers": [
+      "∅",
+      "A",
+      "Universal set",
+      "A'"
+    ],
+    "correct": "∅",
+    "explanation": "The intersection of any set A with the empty set is always the empty set, as there are no elements common to both A and the empty set.",
+    "category": "Operations",
+    "difficulty": "Medium"
+  }
+]
