@@ -1,5 +1,5 @@
 const allQuestions = {
-    Python: null
+    SetTheory: null
 };
 
 async function loadQuestionLibrary(libraryName) {
